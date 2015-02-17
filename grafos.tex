@@ -1,0 +1,1039 @@
+\documentclass[11pt,a4paper,oneside]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{a4wide}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[isolatin]{inputenc}
+\usepackage[portuges]{babel}
+\usepackage{graphicx}
+
+\usepackage[all]{xy}
+
+\setlength{\oddsidemargin}{-0.5cm} \setlength{\textwidth}{ 500pt}
+\topmargin = -1cm \headheight = 0cm \headsep = 0cm
+%\pagestyle{empty}
+\textheight 26cm \textwidth 17.cm
+
+\linespread{1.2}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\ben{\begin{enumerate}}
+\def\een{\end{enumerate}}
+\def\l({\left(}
+\def\r){\right)}
+\def\lsqbr{\left[}
+\def\rsqbr{\right]}
+\def\lbr{\left[}
+\def\rbr{\right]}
+\def\ZZ{{\mathbb{Z}}}
+\def\CC{{\mathbb{C}}}
+\def\NN{{\mathbb{N}}}
+\def\KK{{\mathbb{K}}}
+\def\RR{{\mathbb{R}}}
+\def\QQ{{\mathbb{Q}}}
+\def\cMmn{\mathcal{M}_{m\times n}}
+\def\cMrp{\mathcal{M}_{r\times p}}
+\def\cMrn{\mathcal{M}_{r\times n}}
+\def\cMm{\mathcal{M}_{m}}\def\cMn{\mathcal{M}_{n}}
+\def\cMp{\mathcal{M}_{p}}
+\def\cMq{\mathcal{M}_{q}}
+\def\cMk{\mathcal{M}_{k}}
+\def\cM{\mathcal{M}}
+\def\cLT{\mathcal{LT}}
+\def\cLTn{\mathcal{LT}_n}
+\def\parR{\left( \RR \right)}
+\def\parC{\left( \CC \right)}
+\def\parK{\left( \KK \right)}
+%\def\epf{\hfill \rule{2mm}{4mm}}
+\def\epf{\endproof}
+\def\iff{\Leftrightarrow}
+\def\imply{\Rightarrow}
+\def\beqn{\begin{eqnarray*}}
+\def\eeqn{\end{eqnarray*}}
+\def\barr{\begin{array}}
+\def\earr{\end{array}}
+\def\vN{\l(1\r)}
+\def\para{\rightarrow}
+\def\lin{\langle}
+\def\rin{\rangle}
+\def\ort{T}
+
+
+\def\P{{\cal{P}}}
+\def\V{{\cal{V}}}
+\def\A{{\cal{A}}}
+\def\G{{\cal{G}}}
+\def\D{{\cal{D}}}
+\def\K{{\cal{K}}}
+\def\H{{\cal{H}}}
+
+
+
+\def\cR{{\cal R}(A)}
+
+\def\scj{\subseteq}
+
+
+\def\x{\times}
+
+\def\adj{\leftrightarrow}
+
+\def\laco{\ar@(ul,ur)}
+\def\lacoop{\ar@(dr,dl)}
+\def\linha{\ar@{-}}
+
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{definition}[theorem]{Defini\c{c}\~{a}o}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{proposition}[theorem]{Proposi\c{c}\~{a}o}
+\newtheorem{corollary}[theorem]{Corol\'{a}rio}
+\newtheorem{exemplo}[theorem]{Exemplo}
+\newtheorem{obs}[theorem]{Observação}
+\newtheorem{conj}[theorem]{Conjectura}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Breve introdu\c c\~ao \`a teoria de grafos}
+\author{\sf Pedro Patr\'{\i}cio}
+\date{Abril 2006}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introdu\c c\~ao}
+
+Os grafos são uma forma conveniente de representar um fluxo de um certo bem. Imagine uma empresa transportadora que tem a seu cargo o fornecimento de um certo bem a várias localidades (ou filiais, deixo à sua imaginação). Obviamente que a empresa tem como alvo efectuar o serviço de forma competente, reduzindo os custos. Intuitivamente, associa-se cada filial a um vértice, desenhando uma aresta entre dois vértices (aka filiais) se estes estiverem ligados de alguma forma conveniente -- por auto-estrada, por exemplo. Claro que a cada aresta podemos associar um peso, relativo ao custo de tomar essa estrada (combustível, portagens, horas a serem pagas ao motorista, por exemplo). Podemos também assumir que existem estradas de "sentido \'unico", obtendo assim um digrafo ou grafo dirigido, ou que existem vários caminhos possíveis, e neste caso temos um multigrafo. Os grafos tornam-se então numa representação gráfica de possíveis fluxos de bens, o que não significa que constituam um mapa. De facto, não existe obrigatoriedade qualquer em relação a orientação, posição nem distância relativa.
+
+\section{Conceitos iniciais}
+
+
+\begin{definition}
+Um digrafo $\D$ é um par ordenado $(\V,\A)$, onde $\V$ é um conjunto não vazio finito e $\A$ é um subconjunto de $\left\{(U,V):U,V\in \V \right\}$.
+\end{definition}
+
+
+Os elementos de $\V$ chamam-se vértices de $\D$ e os elementos de $\A$ as arestas de $\D$.
+
+Note-se que acima não está contemplado o caso dos multigrafos. Esta classe de objectos pode ser definida indexando cada aresta a um conjunto de índices. Ou seja, para $I\ne \emptyset$ conjunto de índices, o conjunto das arestas é um subconjunto do produto cartesiano $V\times V \times I$.
+
+Iremos autorizar a existência de lacetes, ou \textit{loops}, isto é, $(U,U)\in \A$, mas não iremos considerar multigrafos.
+
+
+Para se representar graficamente um grafo (com um número finito de vértices e de arestas), tomamos pontos do plano, correspondendo ao vértices do digrafo, $V_1,\dots V_n$, e desenhamos um arco (dirigido) entre $V_i$ e $V_j$ se $(V_i,V_j)\in \A$.
+
+
+Dada uma aresta $(U,V)\in \A$, o vértice $U$ diz-se \textit{extremidade inicial} e o vértice $V$ \textit{extremidade final}.
+
+ Dizemos que os vértices $U$ e $V$ são \textit{adjacentes}, $U \leftrightarrow V$, se $(U,V) \in \A$ ou $(V,U) \in \A$. Em qualquer um destes  casos, diz-se que o vértice $U$  é \textit{vizinho} do vértice $V$. Esta aresta diz-se \textit{incidente} em cada um desses vértices. O conjunto dos vizinhos de $U$ denota-se por $\Gamma(U)$.
+Duas arestas $\ell_1,\ell_2$ são \textit{adjacentes }se existir $X\in \V$ tal que $\ell_1, \ell_2$ incidem em $X$.
+
+Os \textit{antecessores} [resp. \textit{sucessores}] de um vértice $V$ são os elementos do conjunto $\Gamma^-(V)=\left\{U\in \V:(U,V)\in \A \right\}$ [resp. $\Gamma^+(V)=\left\{U\in \V:(V,U)\in \A \right\}$].
+
+
+
+O \textit{grau} (ou \textit{valência)} de um vértice $V$, denotado por $deg(V)$ ou por $\partial(V)$, é o número de arestas próprias (ou seja, que não sejam lacetes) incidentes em $V$ adicionado ao dobro do número\footnote{que no nosso caso pode ser 0 ou 1.} de laços em $V$ . O \textit{grau interior} de $V$, $\partial^- (V)$, é o número de arestas da forma $(*,V)$, e o \textit{grau exterior} de $V$, $\partial^+(V)$, é o número de arestas da forma $(V,*)$. Ou seja, $\partial^-(V)=\#\Gamma^-(V)$ e $\partial^+(V)=\#\Gamma^+(V)$.
+
+A título de exemplo, considere a representação gráfica do digrafo seguinte
+
+$$\xymatrix{
+U \ar@/_/[r] & \ar@/_/[l]V\ar@(ul,ur)\ar[r] & W}$$
+Temos, então, $\V=\left\{U,V,W\right\},\A=\left\{(U,V),(V,U),(V,V),(V,W)\right\}$.
+Neste digrafo, $\partial^-(U)=\partial^+(U)=\partial^-(W)=1,\partial^+(W)=0,\partial^+(V)=\partial^-(V)=2$.
+
+\
+
+Um digrafo $(\V,\A)$ é
+\ben
+\item um $n$-digrafo se $\#\V =n$
+\item um $(p,q)$-digrafo se $\#\V=p,\# \A=q$
+\item simples se $\forall_{V\in \V} (V,V)\notin \A$
+\item reflexivo se $\forall_{ V\in \V} (V,V)\in \A$
+\item completo se \textit{todas} as possíveis arestas estão presentes (inclusivé os lacetes)
+\item simétrico se $(U,V)\in \A \imply (V,U)\in \A$
+\item transitivo se $(U,V)\in \A,(V,W)\in \A \imply (U,W)\in \A$
+\item de torneio se  $\forall_{U,V\in \V}$ se tem $(U,V)\in \A $ xor $ (V,U)\in \A$
+\een
+
+
+\begin{figure}[h]
+\begin{center}
+\begin{tabular}{lll}
+$\xymatrix{
+S_1 \ar@(ul,ur)\ar@/_/[r] & \ar@/_/[l] \ar@(ul,ur) S_2} $\hspace{2cm}
+&
+$\xymatrix{
+1 \ar[r] &\ar[d] 2 \\
+ & \ar[lu] 3}$\hspace{2cm}
+&
+$\xymatrix{
+V_1\cdot & \ar@(ul,ur) V_2\\
+V_3 \ar[r]\ar[rd] &\ar[d] V_4 \\
+ &  V_5}$\\
+(a) & (b) & (c)
+\end{tabular}
+\caption{Tente classificar cada um destes digrafos.}
+\end{center}
+\end{figure}
+
+Note-se que, dado um digrafo simétrico, se $(U,V)\in \A$ então $\left\{(U,V),(V,U)\right\} \subseteq \A$. Podemos, portanto, identificar este par de arestas com $\left\{U,V\right\}$. Esta aresta é representada simplesmente por um segmento de recta que une os dois vértices em que incide.
+
+\
+
+\begin{figure}[h]
+\begin{center}
+
+\begin{tabular}{cc}
+$\xymatrix{
+ & 1 \ar@/^/[ld]  \ar@/^/[rd] & \\
+2 \ar@/^/[ru] & & \ar@/^/[lu] 3 }$ \hspace{2cm}
+&
+$\xymatrix{
+& \ar@{-}[ld]1 \ar@{-}[rd] &\\
+2  && 3 }$
+\end{tabular}
+
+\end{center}
+\caption{Digrafo simétrico e correspondente grafo}
+\end{figure} 
+
+\
+
+ Esta identificação leva-nos à definição de grafo não dirigido, ou simplesmente \textit{grafo}.
+
+\begin{definition}
+Um grafo (não dirigido)  $G$ é um par ordenado $(\V,\A)$, onde $\V$ é um conjunto não vazio finito e $\A$ é um subconjunto de $\left\{\left\{U,V\right\}:U,V\in \V \right\}$.
+\end{definition}
+
+\section{Representa\c c\~ao com matrizes}
+A um $(p,q)$-grafo $\G$  podemos associar, de forma única, uma matriz $p\x p$, $A_G=A(\G)$, denominada \textit{matriz de adjacência} de $\G$, cujas linhas e colunas estão indexadas da mesma forma a uma ordenação dos elementos de $\V$, definida por
+$$A_{[u,v]}=\left\{\barr{ll}
+\text{número de arestas entre $u$ e $v$} & \text{se } u\ne v\\
+\text{número de lacetes em }u & \text{se }  u= v\earr\right.
+$$ onde $u,v\in \V$.
+
+Claro que ao apenas considerarmos grafos ao invés de multigrafos, então as entradas da matriz de adjacência podem apenas tomar os valores $0$ e $1$.
+
+Considere os grafos
+\begin{center}
+
+% use packages: array
+\begin{tabular}{ll}
+$
+\xymatrix{
+ \laco u \ar@{-}[r]\ar@{-}[rd] \ar@{-}[d]& v\ar@{-}[d] \\ 
+x \ar@{-}[r] & w}
+$
+&\hspace{2cm}
+$
+% use packages: array
+\xymatrix{
+a \laco \ar@{-}[r] \ar@{-}[rd]\ar@{-}[rdd]& b\ar@{-}[d]\\ 
+ & c\ar@{-}[d]  \\
+& d }
+$
+\end{tabular}
+\end{center}
+
+
+Ordenando os vértices do primeiro grafo da forma $(u,v,w,x)$, a matriz de adjacência é $$A=\lbr\barr{cccc}
+1&1&1&1\\
+1&0&1&0\\
+1&1&0&1\\
+1&0&1&0\earr\rbr.$$ Como exercício, calcule a matriz de adjacência do segundo grafo, ordenando os vértices como $(a,b,c,d)$.
+
+Como é óbvio, a matriz de adjacência de um grafo (não dirigido) é simétrica.
+
+\
+
+Vejamos agora o caso dos digrafos.
+
+Nas mesmas condiç\~oes da definição para grafos, a \textit{matriz de adjacência de um digrafo $\D=(\V,\A)$} é a matriz $A_D$ definida por
+$$A_D[u,v]=\left\{\barr{ll}
+\text{número de arestas entre $u$ e $v$} & \text{se } u\ne v\\
+\text{número de lacetes em }u & \text{se }  u= v\earr\right.
+$$ onde $u,v\in \V$.
+
+
+Como exemplo, $\lbr\barr{cccc}1&1&1&1\\1&0&1&0\\0&0&1&0\\0&0&1&0\earr\rbr$ é a matriz de adjacência do digrafo
+$$
+\xymatrix{
+ \laco u \ar@/_/[r]\ar[rd] \ar[d]& \ar@/_/[l]v\ar[d] \\
+x \ar[r] & \ar@(rd,ru) w}
+$$
+considerando a ordenação dos vértices como $(u,v,w,x)$.
+
+Repare que a linha correspondente ao vértice $u$ diz-nos que  de $u$ é extremidade inicial de todas as arestas, e que a coluna correspondente ao vértice  $w$ diz-nos que $w$ é  extremidade final de todas as arestas. Voltaremos mais tarde a esta noção de alcance.
+
+\
+
+
+A um grafo $\G$ podemos associar uma matriz, a \textit{matriz de incidência}, para uma certa ordenação dos vértices (a que se farão corresponder as linhas) e das arestas (a que se farão corresponder as colunas) fixa previamente, da seguinte forma:
+$$I_\G[v,e]=\left\{ \barr{ll}
+0 & \text{se $e$ não incide em $v$}\\
+1 & \text{se $e$  incide em $v$ e $e$ não é lacete em $v$}\\
+2 & \text{se $e$ é lacete em $v$}
+\earr\right.$$onde $v\in \V$ e $e\in \A$.
+
+Calculemos a matriz de incidência do grafo já visto anteriormente, ordenando os vértices como $(u,v,w,x)$ e as arestas como $(a,b,c,d,e,f)$:
+
+\begin{center}
+% use packages: array
+\begin{tabular}{ll}
+$
+\xymatrix{
+ \laco^a u \ar@{-}[r]^b\ar@{-}[rd]^d \ar@{-}[d]_f& v\ar@{-}[d]^c \\ 
+x \ar@{-}[r]_e & w}
+$\hspace*{2cm}
+ & $I_\G=\lbr\barr{cccccc}
+2& 1 & 0 &1 &0&1\\
+0&1&1&0&0&0\\
+0&0&1&1&1&0\\
+0&0&0&0&1&1\earr\rbr$
+\end{tabular}
+\end{center}
+
+Como é fácil de verificar, uma outra ordenação dos vértices leva a troca de linhas da matriz de incidência, e uma outra ordenação das arestas a troca de colunas da matriz de incidência.
+
+\begin{proposition}
+A soma das entradas de uma qualquer linha da matriz de incidência é igual ao grau do vértice respectivo.
+\end{proposition}
+\proof Considere um vértice $v$ do grafo de forma arbitrária, bem como as arestas das quais $v$ é extremidade, mas que não são lacete em $v$ Estas são em número igual  $\partial(v)$, que iguala o número de 1's na linha correspondente ao vértive $v$ na matrix de incidência. Ora um lacete $f$ (caso exista) contribui com 2 unidades no cálculo de $\partial(v)$, e 2 é a entrada na linha correspondente ao vértice $v$ e na coluna correspondente à aresta $f$.\endproof
+
+\begin{proposition}
+A soma das entradas de uma qualquer coluna da matriz de incidência é igual a 2.
+\end{proposition}
+\proof
+Se a aresta $e$  incide em dois vértices distintos, digamos $u$ e $v$, então as entradas correspondentes a $u,e$ e $v,e$ são iguais a 1. Uma aresta incide no máximo em dois vértices, pelo que as outras entradas dessa coluna valem 0. Se $e$ é lacete, então incide num só vértice e a entrada correspondente é 2, sendo as restantes nulas.\endproof
+
+A matriz de incidência de um digrafo é definida de forma análoga. Dado o digrafo  $\D=(\V,\A)$, e para uma ordenação dos elementos de $\V$ e dos elementos de $\A$ fixa previamente, a matriz de incidência $I_\D$ de $\D$ é dada por
+$$I_\D[v,e]=\left\{ \barr{cl}
+0 & \text{se $e$ não incide em $v$}\\
+-1 & \text{se $v$  é extremidade inicial de $e$ e $e$ não é lacete em $v$}\\
+1 & \text{se $v$ é extremidade final de $e$ e $e$ não é lacete em $v$}\\
+2 & \text{se $e$ é lacete em $v$}
+\earr\right.$$onde $v\in \V$ e $e\in \A$.
+
+Por exemplo, no digrafo seguinte, ordenando os vértices como $(u,v,w,x)$ e as arestas como $(a,b,c,d,e,f,g,h)$,
+
+
+\begin{center}
+% use packages: array
+\begin{tabular}{ll}
+$
+\xymatrix{
+ \laco^a u \ar@/_/[r]_c\ar[rd]_f \ar[d]_h & \ar@/_/[l]_b v\ar[d]^d \\
+x \ar[r]_g & \ar@(rd,ru)_e w}
+$
+\hspace*{2cm}
+ & 
+$I_\D=\lbr\barr{cccccccc}
+2& 1 & -1 &0 &0&-1&0&-1\\
+0&-1&1&-1&0&0&0&0\\
+0&0&0&1&2&1&1&0\\
+0&0&0&0&0&0&-1&1\earr\rbr$
+\end{tabular}
+\end{center}
+
+\begin{proposition} Num digrafo sem lacetes, a soma das entradas de uma coluna da matriz de incidência é zero.
+\end{proposition}
+\proof
+Exercício. \epf
+
+
+
+
+\section{Fam\'{\i}lias de grafos}
+Nesta secção, consideramos apenas  grafos. Recorde que um grafo  $\G$ é um par ordenado $(\V,\A)$, onde $\V$ é um conjunto não vazio finito e $\A$ é um subconjunto de $\left\{\left\{U,V\right\}:U,V\in \V \right\}$.
+
+\
+
+
+Os grafos $\G$ e $\H$ são isomorfos, $\G\cong \H$ se exitir uma bijecção $f:V_\G \para V_\H$ tal que $u \leftrightarrow v \iff f(u)\adj f(v)$. Ou seja, existe uma bijecção entre o conjunto dos vértices dos dois grafos de tal forma que a incidência é preservada. Na prática, significa que se toma outra indexação para os vértices. Se $\varphi$ for o isomorfismo, então escrever-se-á $\G \displaystyle\cong_\varphi \H$.
+
+\begin{proposition}
+Se $\G \cong_\varphi \H$ então
+\ben
+\item $\# \V_\G = \# \V_\H$
+\item $\#A_\G=\#\A_\H$
+\item para $v\in \V_\G$, $deg(v)=deg(\varphi(v))$.
+\een
+\end{proposition}
+
+Dados dois grafos, uma forma possível de se testar o isomorfismo é percorrer \textbf{todas} as bijecç\~oes entre os dois conjuntos de vértices  (repare que por (1) da proposição estes são necessariamente equipotentes) até se encontrar uma que preserva a vizinhança. Suponha que $\# \V_\G=\#\V_\H=n$. Então existem $n!$ bijecç\~oes possíveis, o que se para grafos com poucos vértices é realizável, torna-se num algoritmo pouco prático para outros grafos. Tal suscita o chamado \textit{Problema do Isomorfismo de Grafos}, que pode ser exposto, de uma forma ingénua assim:
+\begin{itemize}
+\item apresentar um algoritmo que, de forma ``prática", encontra o isomorfismo ou mostra que tão isomorfismo não existe;
+\item em alternativa ao ponto anterior, mostrar que tal algoritmo ``prático" \  não existe.
+\end{itemize}
+
+Existem formas imediatas de teste de \textit{não isomorfismo}, nomeadamente fazendo uso da proposição anterior. Em primeiro lugar, existe a condição de equipotência tratada nos pontos (1) e (2) da proposição. Por exemplo, não são isomorfos
+$$
+\xymatrix{
+& \bullet \linha[ld] \linha[rd] &\\
+\bullet \linha[rr] & &\bullet } \hspace*{3cm} 
+\xymatrix{
+\bullet \linha[r] & \bullet\linha[r]&  \bullet}$$
+O facto de (1) e (2) da proposição serem satisfeitos não implica que os grafos sejam isomorfos. Mostre por que não são isomorfos, usando (3) da proposição,
+$$\xymatrix{
+\bullet\linha[r] &\bullet\linha[r]\linha[d] &\bullet\linha[r] &\bullet\linha[r] &\bullet\\
+& \bullet & & & } \hspace*{3cm} 
+\xymatrix{
+\bullet\linha[r] &\bullet\linha[r] &\bullet\linha[r]\linha[d] &\bullet\linha[r] &\bullet\\
+& & \bullet  & & }
+$$
+
+Vejamos como se relacionam as matrizes de adjacência de dois grafos isomorfos. Para tal, dizemos que duas matrizes $A,B$, quadradas com a mesma ordem, são \textit{permutacionalmente semelhantes}, $A\displaystyle\approx_{per} B$, se existir uma matriz permutação $P$ (ou seja, é obtida da matriz identidade fazendo trocas de linhas) tal que $A=PBP^T$.
+
+\begin{proposition}
+Sejam $A_\G$ e $A_\H$ matrizes de adjacência dos grafos $\G$ e $\H$, respectivamente. Então
+$$\G \cong \H \iff A_\G \displaystyle\approx_{per} A_\H.$$
+\end{proposition}
+
+\
+
+Um grafo $\G$ está contido num grafo $\H$, $\G\subseteq \H$, se $\V_\G \subseteq \V_\H$ e $\A_\G \subseteq \A_\H$.
+$\G '$ é subgrafo de $\G$ se $\G '\subseteq \G$. 
+
+Um subgrafo $\G'$ de $\G$ é {\em gerador} se $\V_{G'}=\V_G$. Ou seja, tem exactamente o mesmo conjunto de vértices.
+
+Para $S\subseteq \V_\G$, o subgrafo induzido por $S$, $\lin S\rin$, é o subgrafo maximal $\G'$ de $\G$ com $\V_{\G'}=S$. Este subgrafo é denotado por $\G_S$.
+
+A proposição seguinte dá-nos outra forma de mostrar o não isomorfismo entre grafos (ou seja, fornece mais uma  condição necessária do isomorfismo de grafos).
+\begin{proposition}
+Se $\G \cong_\varphi \H$ e $S\subseteq \V_\G$ então $$\G_S \cong \H_{\varphi(S)}.$$
+\end{proposition}
+\proof Exercício. \epf
+
+\
+
+Mostremos o não isomorfismo entre os grafos seguintes, denotados respectivamente por $\G$ e $\H$:
+$$\xymatrix{
+1 \linha[rrr] & & &2 \linha[ld] \linha[ddd]\\
+& 5\linha[d] \linha[r] & 6 \linha[d] &\\
+& 8 \linha[r] \linha[ld] & 7 &\\
+4 \linha[rrr]\linha[uuu]&  & &3}\hspace*{3cm}
+\xymatrix{
+a \linha[rrr] & & &b  \linha[ddd]\\
+& e\linha[d] \linha[r] & f \linha[d] &\\
+& h \linha[r]\linha[ld] & g \linha[rd]&\\
+d \linha[rrr]\linha[uuu]&  & &c}$$
+Suponha, por absurdo, que tal isomorfismo $\varphi$ existe. Os  vértices de grau 3 são 2,4,6 e 8 do primeiro grafo e $c,d,g$ e $h$ do segundo. Portanto, e como os graus são preservados, $\varphi$ aplica $\left\{2,4,6, 8\right\}$ de alguma forma em $\left\{c,d,g,h\right\}$; ou seja, $\varphi\left(\left\{2,4,6, 8\right\} \right)=\left\{c,d,g,h\right\}$. Fazendo uso da proposição anterior, segue que 
+$$\G_{\left\{2,4,6, 8\right\}} \cong_\varphi \H_{\left\{c,d,g,h\right\}}.$$ Mas tal não é verdade, já que se representam, respectivamente, por
+$$\xymatrix{
+4 \linha[r] & 8 & 6\linha[r] &2}
+\hspace*{3cm}
+\xymatrix{
+h\linha[d]\linha[r] & g\linha[d]\\
+d\linha[r] & c}$$
+
+Um problema que se coloca é, de alguma forma, o recíproco da proposição. Por outras palavras, se certo tipo de subgrafos induzidos são isomorfos então serão os grafos isomorfos? Vejamos que tipo de subgrafos induzidos nos interessam.
+
+Para $v_i \in \V_\G$, $\G-v_i$ é o subgrafo de $\G$ induzido por $\V_G \setminus \left\{v_i \right\}$. 
+Ou seja, $\G-v_i$ denota $\G_{\V_\G\setminus\left\{v_i \right\}}$. A lista de subgrafos de vértice eliminado é a representação dos subgrafos $\G-v_i$, onde $v_i$ percorre o conjunto dos vértices. Por exemplo, o grafo
+$$\xymatrix{
+&  u \linha[ld] \linha[ldd]\linha[rdd] \linha[rd] & \\
+y \linha[d]  \linha[rrd] && v\linha[d]\linha[lld]\\
+x \linha[rr] && w}$$
+a que voltaremos um pouco mais adiante, tem a seguinte lista de subgrafos de vértice eliminado:
+\begin{center}
+\begin{tabular}{lllll}
+$\xymatrix{
+\bullet \linha[r]\linha[rd]\linha[d] & \bullet \linha[d]\\
+\bullet\linha[r] & \bullet}$ \hspace*{1cm}
+&
+$\xymatrix{
+\bullet \linha[r]\linha[d]\linha[rd] & \bullet \linha[d]\linha[ld]\\
+\bullet\linha[r] & \bullet}$\hspace*{1cm}
+&
+$\xymatrix{
+\bullet \linha[r]\linha[d]\linha[rd] & \bullet \linha[d]\\
+\bullet\linha[r] & \bullet}$\hspace*{1cm}
+&
+$\xymatrix{
+\bullet \linha[r]\linha[d]\linha[rd] & \bullet \linha[d]\\
+\bullet\linha[r] & \bullet}$\hspace*{1cm}
+&
+$\xymatrix{
+\bullet \linha[r]\linha[d]\linha[rd] & \bullet \linha[d]\linha[ld]\\
+\bullet\linha[r] & \bullet}$\\
+$\G-u$ & $\G-v$ & $\G-w$ & $\G-x$ & $\G-y$
+\end{tabular} 
+
+\end{center}
+
+O \textit{Problema da Reconstrução do Grafo} consiste em decidir se dois grafos não isomorfos com 3 ou mais vértices podem ter a mesma lista de subgrafos de vértice eliminado. 
+\begin{conj}[P.J. Kelly \& S.M. Ulam (1941)]
+Sejam $\G,\H$ grafos com $$\V_\G=\{v_1, \dots, v_n\}, \V_\H=\{u_1,\dots,u_n\}, n\ge 3.$$ Sejam ainda $$\G_i=\G-v_i, \H_i=\H-u_i .$$ Se, para $i=1, \dots, n$, $$\G_i \cong \H_i,$$ então $$\G\cong \H.$$
+\end{conj}
+
+Acrescente-se que, de forma independente, em 1977 foi mostrado por B. McKay e por A. Nijenhuis, recorrendo a computadores, que um possível contra-exemplo da conjectura teria que ter, pelo menos, 10 vértices.
+
+\
+
+Recorde a definição de digrafo completo. Ao se considerarem grafos (ou seja, digrafos simétricos), a noção de grafo completo é a induzida pelo digrafo, com a \textit{nuance} de se assumir que o digrafo é simples. Ou  seja, um grafo simples (isto é, sem lacetes), diz-se\textit{ completo} de quaisquer dois vértices são vizinhos um do outro. Um $n$-grafo completo é denotado por $\K_n$.
+\begin{center}
+% use packages: array
+\begin{tabular}{ccccc}
+$\bullet$ \hspace{2cm}&
+$\xymatrix{
+\bullet\linha[d]\\
+\bullet}$ \hspace{2cm}& 
+$\xymatrix{
+& \ar@{-}[ld]\bullet \ar@{-}[rd] &\\
+\bullet \linha[rr] && \bullet }$ \hspace{2cm}&
+$\xymatrix{
+& \bullet \ar@{-}[ldd] \linha[d] \linha[rdd]& \\ 
+ & \bullet\linha[ld]\linha[rd] & \\
+\bullet \linha[rr] & & \bullet}$
+\hspace{2cm}& 
+$\xymatrix{
+&  \bullet \linha[ld] \linha[ldd]\linha[rdd] \linha[rd] & \\
+\bullet \linha[d] \linha[rr] \linha[rrd] && \bullet\linha[d]\linha[lld]\\
+\bullet \linha[rr] && \bullet}$
+\\
+ $\K_1$&  $\K_2$& $\K_3$ & $\K_4$ & $\K_5$
+\end{tabular}
+\end{center}
+
+Um {\em bigrafo} ou {\em grafo bipartido} $\G=(\V,\A)$ é tal que $\V_G=V_1 \cup V_2$, com $V_1,V_2 \ne \emptyset$ mas $V_1\cap V_2=\emptyset$, e $\forall_{x\in \A_\G} x\subseteq V_1 \cup V_2$. Ou seja, toda a aresta é incidente com um vértice de $V_1$ e um vértice de $V_2$. Portanto, existe uma partição do conjunto dos vértices de tal forma que dois vértices na mesma componente da partição não são vizinhos.
+
+\begin{proposition} 
+Todo o grafo bipartido é simples.
+\end{proposition}
+
+Um bigrafo é {\em completo} se tiver todas as arestas possíveis incidentes com um vértice de $V_1$ e um de $V_2$. De outra forma, 
+$$\left(\left( v_1\in V_1 \wedge v_2 \in V_2 \right) \vee \left( v_1\in V_2 \wedge v_2 \in V_1 \right) \right) \iff \{v_1,v_2\} \in A_G.$$
+Ou ainda, quaisquer dois vértices $v_1\in V_1$ e $v_2\in V_2$ são vizinhos.
+
+Se $\#V_1=m,\#V_2=n$ então com grafo bipartido completo com $V_1\cup V_2$ como vértices denota-se por $\K_{m,n}$. Por exemplo,
+
+\begin{center}
+% use packages: array
+\begin{tabular}{llll}
+$\xymatrix{ 
+\circ\linha[r]\linha[rd]\linha[rdd] & \bullet\\
+\circ\linha[ru] \linha[r]\linha[rd] & \bullet\\
+\circ\linha[ru] \linha[r]\linha[ruu]& \bullet}$\hspace*{2cm}
+ & $\xymatrix{ \circ\linha[r]\linha[rd]\linha[rdd] & \bullet\\
+\circ\linha[ru] \linha[r]\linha[rd] & \bullet\\
+& \bullet}$\hspace*{2cm}
+ &  $\xymatrix{ \circ \linha[r]\linha[d] & \bullet\\
+\bullet\linha[r] & \circ\linha[u]}$ \hspace*{2cm}
+&  $\xymatrix{
+& \circ \linha[d] & \\
+\circ \linha[r] &\bullet\linha[r]\linha[d] &\circ\\
+& \circ  & }$
+\\ 
+$\K_{3,3}$ &$\K_{2,3}$ & $\K_{2,2}$ & $\K_{1,4}$
+\end{tabular}
+\end{center}
+
+
+O grafo bipartido completo $\K_{1,n}$ chama-se, por raz\~oes óbvias, \textit{ estrela}.
+
+Note-se que $\# \A_{\K_{m,n}}=mn$.
+
+
+\begin{theorem}[Teorema de Euler]
+Seja $G$ um $(p,q)$-grafo. Então
+$$\sum_{v_i\in V_G} deg(v_i) = 2q.$$
+\end{theorem}
+
+\proof
+
+A demonstração é feita por indução sobre o número de arestas.
+
+Prove-se o resultado para grafos $(p,1)$. Ou seja, o grafo tem $p$ vértices e 1 aresta ($p\ge 2$). Tem-se então que existem apenas 2 vértices $v_i,v_j$ incidentes. Ou seja, $deg(v_i)=deg(v_j)=1$ e $deg(v_k)=0$, para $k\ne i,j$. A igualdade do teorema de Euler é satisfeita de forma imediata.
+
+Suponhamos agora que a igualdade é válida para grafos $(p,q)$. Pretende-se que tal é suficiente para a validade da igualdade em grafos $(p,q+1)$. Seja, então,  $G$ um grafo com $p$ vértices e $q+1$ arestas. Sejam $x_i$ uma aresta de $G$ fixa arbitrariamente e $G'=(V_G,A_G\setminus \{x_i\})$. Ora $G'$ é um grafo $(p,q)$, pelo que a hipótese de indução mostra que
+$$\sum_{v_i \in V_{G'}} deg(v_i) =2q.$$
+
+Ao incluirmos a aresta $x_i$, esta contribui com 2 unidades na soma total dos graus dos vértives de $G$. Logo, e recordando que $V_G=V_{G'}$,
+$$\sum_{v_i\in V_G} deg(v_i)=2q+2=2(q+1).$$\epf
+
+
+\begin{corollary}
+O número de vértices de um grafo com grau ímpar é par.
+\end{corollary}
+
+Dado $G$ um grafo simples $(p,q)$, então $$\forall_{v\in V_G}, 0\le deg(v) \le p-1.$$
+Denota-se por 
+$$\min deg\, G = \delta (G)=\min_{v\in V_G} deg(v),$$ 
+$$\max deg\, G = \Delta (G) = \max_{v\in V_G} deg(v).$$
+
+Se $\delta(G)=\Delta(G)=r$, então $deg(v)=r, \forall_{v\in V_G}$. Neste caso, diz-se que o grafo é regular com grau $r$, ou que o grafo é $k$-regular.
+
+Um grafo $G$ regular com $deg(G)=3$ chama-se um grafo cúbico. 
+
+Os grafos platónicos são os correspondentes\footnote{Da forma natural, os vértices [resp. arestas] do grafo são os vértices [resp. arestas] do sólido.} aos cinco sólidos platónicos\footnote{A saber: o tetraedro, o cubo, o octaedro, o dodecaedro e o icosaedro.}. Saliente-se, no entanto, que um grafo cúbico não é necessariamente o cubo. Como exemplo, repare no grafo de Petersen:
+
+$$\xymatrix{
+ & & \bullet \linha[lldd] \linha[d] \linha[rrdd] & &  \\
+& & \linha[ldd]\linha[rdd]\bullet & &\\
+\bullet\linha[dd]\linha[r] &   \bullet\linha[rr] \linha[rrd]& & \bullet\linha[r]\linha[lld]  & \bullet\linha[dd] \\
+ & \bullet \linha[ld]  & & \bullet\linha[rd] &\\
+\bullet \linha[rrrr]  & & & &\bullet
+}$$
+\begin{corollary}
+Todo o grafo cúbico tem um número par de vértices.
+\end{corollary}
+
+
+
+\section{Caminhos e conexidade}
+
+
+Um caminho\footnote{{\em walk}, em inglês.} num grafo $G$ é uma sucessão de vértices e arestas $$v_0,x_1,v_1,\dots v_{n-1},x_n,v_n,$$ com $v_i\in V_G$, tais que $x_i=\{v_{i-1},v_i\}$. Ou seja, $v_{i-1}\adj v_i$. Num digrafo, as arestas são tais que $x_i=(v_{i-1},v_i)$, ou seja, a extremidade inicial de $x_i$ é $v_{i-1}$ e a final é $v_i$.
+
+Visto não considerarmos multigrafos, esse caminho é denotado por $( v_0,v_1,v_2, \dots, v_n)$, ou mais simplesmente $$ v_0v_1v_2 \dots v_n,$$ e dizemos que existe um caminho $v_0 - v_n$. Neste caso, $v_n$ é alcançável de $v_0$. Um caminho diz-se trivial se só tiver um vértice, sem lacete.
+
+Definiç\~oes análogas podem ser dadas para digrafos.
+
+Um caminho  é
+\begin{itemize}
+\item {\em fechado} se $v_0=v_n$, e {\em aberto} caso contrário;
+\item {\em simples\footnote{{\em trail}, em inglês.}} se $x_i\ne x_j$, para $i\ne j$;
+\item {\em elementar\footnote{{\em path}, em inglês.}} se $v_i\ne v_j$, para $i\ne j$, excepto possivelmente o inicial e o final.
+\end{itemize}
+
+Note-se com um caminho elementar é simples, mas que o contrário é falso.
+
+Um {\em ciclo\footnote{{\em cycle}, em inglês.}}  é um caminho  fechado elementar não trivial. Um {\em circuito\footnote{{\em circuit}, em inglês.}} é um caminho  fechado simples não trivial.
+
+
+Recuperamos um grafo que apresentámos atrás:
+$$\xymatrix{
+&  u \linha[ld] \linha[ldd]\linha[rdd] \linha[rd] & \\
+y \linha[d]  \linha[rrd] && v\linha[d]\linha[lld]\\
+x \linha[rr] && w}$$
+
+Um caminho $u-v$ é, por exemplo, $uwxyuv$. Repare que este caminho repete um vértice mas não repete nenhuma aresta. Portanto, é um caminho simples que não é elementar. Já $xvux$ é um ciclo e $xvuxywx$ é um circuito.
+
+\
+
+Um grafo que é um ciclo com $n$ vértices denota-se por $C_n$, e um grafo que é um caminho elementar com $n$ vértices denota-se por $P_n$. $C_3$ é usualmente denominado {\em triângulo}.
+
+\
+
+\begin{center}
+\begin{tabular}{lll}
+$\xymatrix{
+\bullet \laco }$ \hspace{2cm}
+&
+$\xymatrix{
+\bullet \linha[d] \linha[r] & \bullet\\
+\bullet \linha[ru]}$ \hspace{2cm} 
+&
+$\xymatrix{
+\bullet \linha[d] \linha[r] & \bullet\\
+\bullet \linha[r] & \bullet\linha[u]}$\\
+$C_1$  & $C_3$ & $C_4$ 
+
+\end{tabular}
+
+\begin{tabular}{lll}
+
+$\xymatrix{
+\bullet \linha[r]& \bullet}$ \hspace{2cm}
+&
+$\xymatrix{
+\bullet \linha[d] \linha[r] & \bullet\\
+\bullet }$ \hspace{2cm} 
+&
+$\xymatrix{
+\bullet \linha[d] \linha[r] & \bullet\\
+\bullet \linha[r] & \bullet}$\\
+ $P_2$ & $P_3$ & $P_4$ 
+
+\end{tabular}
+
+\end{center}
+
+
+
+\
+
+Um grafo  é {\em conexo} se, para quaisquer vértices $v_i,v_j$ distintos, existe um caminho $v_i - v_j$.  Portanto, um grafo é conexo se quaisquer dois vértices forem alcançáveis um do outro.
+
+Dado um grafo $\G$, podemos definir a seguinte relação em $\V_\G$, que é de equivalência:
+$$v_i \rho v_j \text{ se existe um caminho } v_i - v_j.$$
+
+As componentes conexas (ou simplesmente componentes) são os subgrafos induzidos pelas classes de equivalência. Ou seja, uma componente conexa é um subgrafo maximal conexo de $G$.
+
+\
+
+
+O comprimento $\ell (\gamma) $ de um caminho $\gamma$ é o número de arestas desse caminho. Denota-se por $\Gamma_{i,j}^k$ o conjunto de todos os caminhos de comprimento $k$ do vértice $V_i$ para o vértice $V_j$, e por $\Gamma_{uv}$ o conjunto de todos os caminhos $u-v$. Se $\gamma=(v_0,v_1,\dots,v_n)$ contiver um caminho fechado $\omega=(v_k,\dots,v_k)$, uma redução $\phi$ do caminho $\gamma$, $\gamma-\omega$, é o caminho  obtido de $\gamma$ a que se retirou todas as arestas e vértices de $\omega$ à excepção de $v_k$. De forma recíproca, a concatenação de dois caminhos $\gamma=(v_0,v_1,\dots, v_k),\omega=(v_k,v_{k+1},\dots,v_n)$ é o caminho $\gamma \circ \omega=(v_0,v_1,\dots, v_k,v_k,v_{k+1},\dots,v_n)$.
+
+\begin{proposition} Todo o caminho não fechado $\gamma$ contém um caminho elementar.\end{proposition}
+\proof
+Se $\gamma$ é caminho elementar, então não há nada a provar. Suponhamos então que $\gamma$ não é um caminho elementar. Ou seja, existe um vértice $v_k$ repetido em $\gamma$, $$\gamma=v_0v_1\cdots v_{i-1}v_k v_{i+1}\cdots v_{j-1}v_k v_{j+1}\cdots v_N.$$ Sejam $\omega=v_k v_{i+1}\cdots v_{j-1}v_k$ e $\gamma '=\gamma - \omega$. Se $\gamma$ é um camminho elementar, então a prova está concluída; caso contrário, repete-se o processo até se obter um caminho elementar. \epf 
+
+A distância $d(u,v)$ entre os vértices $u$ e $v$ distintos é o comprimento do menor caminho elementar que os une; caso não exista um tal caminho, $d(u,v)=\infty$. Assume-se que $d(u,u)=0$. Note-se que:
+\ben
+\item $d(u,v)\ge 0$ e $d(u,v)=0 \iff u=v$;
+\item $d(u,v)=d(v,u)$;
+\item $d(u,w)\le d(u,v)+d(v,w)$.
+\een
+Uma geodésica entre $u$ e $v$ é um caminho elementar minimal $u- v$. O diâmetro $d(G)$ de um grafo conexo $G$ é o comprimento da maior geodésica.
+
+
+
+\begin{proposition}
+Um $n$-grafo $\G$, com $n\ge 2$, é bipartido se e só se não tiver ciclos de comprimento ímpar.
+\end{proposition}
+\proof
+Suponhamos que no grafo bipartido $\G$ (sendo $\{V_1,V_2\}$ a partição do conjunto dos vértices de $\G$ na definição de grafo bipartido)  existe um ciclo $\gamma=v_0\cdots v_nv_0$ tal que $\ell(\gamma)$ é ímpar, ou seja, que tem um número ímpar de arestas. Ou seja, o ciclo tem um número ímpar de vértices, já que é um caminho fechado e nenhum vértice surge repetido. Então $v_0, v_n \in V_1 $ ou em alternativa $v_0,v_n \in V_2$. Se   $ v_n \in V_1 $ e como $\{v_n,v_0 \}$ é aresta de $\gamma$, segue que $v_0 \in V_2$ e portanto $v_0 \in V_1 \cap V_2 = \emptyset$. O caso  $ v_n \in V_2 $ é análogo.
+
+Suponhamos agora que $\G$ é um $n$-grafo, com $n\ge 2$, sem ciclos de comprimento ímpar. Sem perda de generalidade, assume-se com $\G$ é conexo. Fixemos $u \in V_\G$ e definamos os conjuntos $V_1=\{v\in V_\G : d(u,v) \text{ é par}\}$ e  $V_2=\{v\in V_\G : d(u,v) \text{ é ímpar}\}$. Como é óbvio, $\{V_1,V_2 \}$ é uma partição de $V_\G$. Resta-nos mostrar que vértices no mesmo elemento da partição não são vizinhos. Por absurdo, vamos supor que existe $e=\{w,v\}$ com   $w,v\in V_1$ (o caso de ambos pertencerem a $V_2$ é análogo). Sendo o grafo conexo, então $u-v$ e $u-w$. Sejam $\gamma_v,\gamma_w$ as geodésicas entre $u$ e $v$ e entre $u$ e $w$, respectivamente. Então existe o vértice $P$, comum aos dois caminhos e que torna a secção $u\cdots P$ de comprimento máximo. Ou seja, $P$ é o último vértice comum às duas geodésicas, e portanto as secç\~oes $u\cdots P$ de $\gamma_1$ e $u\cdots P$ de $\gamma_2$ têm o mesmo comprimento. Como $w,v\in V_1$ então tem igual paridade o comprimento  das secç\~oes $P\cdots v$ e  $P\cdots w$. Se forem pares, então a concatenação dos caminhos $\gamma_1,e,\gamma_2$ define um ciclo de comprimento ímpar. O mesmo se conclui se os comprimentos forem ímpares, o que contradiz a hipótese do grafo não ter ciclos ímpares. \epf
+
+O grafo seguinte não contém ciclos de comprimento ímpar
+$$\xymatrix{
+& \bullet \linha[r]\linha[rdd] & \bullet \linha[rd] &\\
+\bullet\linha[ru]\linha[rd] & &  & \bullet\linha[ld]\\
+& \bullet\linha[r] & \bullet & }$$pelo que é bipartido. Como exercício, descreva os ciclos e  encontre a partição do conjunto dos vértices.
+
+\begin{proposition} Todo o circuito contém um ciclo. \end{proposition}
+\proof Seja $\omega$ um circuito num grafo $\G$. Se $\omega$ é ciclo então não há nada a provar. Se não é, então existem dois vértices $v_0,v_k$ repetidos. Ou seja, existe uma secção $\phi$ do circuito $\omega$ que é um caminho fechado. Como $\omega$ não tem arestas repetidas, então $\phi $ é um circuito. Se $\phi$ é ciclo, então a prova está terminada. Se não, então repete-se o processo até se obter um ciclo.\epf
+
+Vejamos agora como se pode mostrar o não isomorfismo de grafos à custa da noção de conexidade que temos estudado nesta secção.
+
+\begin{theorem}
+Supondo $\G \cong _\varphi \H$,
+\ben
+\item se $\gamma=v_0v_1\cdots v_k$ é um caminho de comprimento $r$ de $\G$ então $\varphi(\gamma)=\varphi(v_0)\varphi(v_1)\cdots \varphi(v_k)$ é um caminho de comprimento $r$ de $\H$.
+\item a imagem por $\varphi$ de um caminho simples [resp. caminho elementar, ciclo] é um   caminho simples [resp. caminho elementar, ciclo] com o mesmo comprimento.
+\item $\G$ e $\H$ têm o mesmo número de componentes conexas.
+\een
+\end{theorem}
+\proof Exercício. \epf
+
+\
+
+Como aplicação do resultado anterior, os grafos seguintes não são isomorfos:
+\begin{center}
+\begin{tabular}{ll}
+$\xymatrix{
+& \bullet \linha[r]\linha[rdd] & \bullet \linha[rd] &\\
+\bullet\linha[ru]\linha[rd] & &  & \bullet\linha[ld]\\
+& \bullet\linha[r] & \bullet & }$ \hspace{2cm}&
+$\xymatrix{
+& \bullet \linha[r]\linha[dd] & \bullet \linha[rd] &\\
+\bullet\linha[ru]\linha[rd] & & & \bullet\linha[ld]\\
+& \bullet\linha[r] & \bullet & }$\\
+$\G$ & $\H$
+\end{tabular}
+\end{center}
+De facto, $\H$ contém um ciclo $C_3$ o que não sucede com $\G$.
+
+\
+
+No resultado seguinte, faz-se uso da noção de matriz de adjacência definida atrás para se estudar não só a alcançabilidade mas também o comprimento dos caminhos possíveis entre dois vértices.
+
+\begin{proposition}
+Seja $A$ a matriz de adjacência do grafo $\G$, para uma ordenação fixa previamente dos vértices. A entrada $A_{[u,v]}^r$ indica o número de caminhos $u-v$ de comprimento $r$.
+\end{proposition} 
+
+
+Um grafo simples diz-se {\em acíclico} se não tiver ciclos.
+
+Uma {\em árvore\footnote{{\em Tree}, em inglês.}} é um grafo acíclico conexo.
+
+Um grafo acíclico chama-se {\em floresta\footnote{{\em Forest}, em inglês.}}. Logo, as componentes conexas de uma floresta são árvores.
+
+\begin{lemma}
+Numa árvore com pelo  menos uma aresta existem pelo menos dois vértices com grau 1.
+\end{lemma}
+\proof
+Seja $N$ o diâmetro do grafo e seja $\gamma=v_0v_1v_2\cdots v_N$ uma geodésica cujo comprimento é $N$, e suponhamos que $v_0$ tem grau maior que 1. Então $v_0$ é vizinho não só de $v_1$ mas também de outro vértice $w$. Se $w$ é vértice de $\gamma$ então $\gamma$ teria um ciclo. Se $w$ não é vértice de $\gamma$ então $\gamma'=wv_0\circ\gamma$ seria um caminho elementar de comprimento $N+1$, o que contraria a noção de diâmetro. O mesmo raciocícnio se aplica a $v_N$.\epf
+
+\begin{theorem} Para $\G$ um grafo $(p,q)$, as afirmaç\~oes seguintes são equivalentes:
+\ben
+\item $\G$ é uma árvore;
+\item Todos os vértices de $G$ são ligados por um único caminho elementar;
+\item $G$ é conexo e $p=q+1$;
+\item $G$ é acíclico e $p=q+1$.
+\een
+\end{theorem}
+\proof
+
+$(1) \iff (2)$. Se $\G$ é uma árvore, então é um grafo acíclo conexo. Existe um caminho $v_i-v_j$, e esse caminho contém um caminho elementar. A concatenação de dois caminhos elementares distintos daria origem a um ciclo, o que mostra a unicidade. Reciprocamente, a existência de um caminho elementar garante a conexidade do grafo. A unicidade impede a existência de ciclos (verifique a razão).
+
+$(1) \imply (3)$. A conexidade é imediata. Considere a propriedade $P(n):$ uma árvore $\G$ com $n$ vértices tem $n-1$ arestas, onde $n\ge 2$. $P(2)$ é válida. Mostre-se que $P(n)$ é suficiente para $P(n+1)$.  Seja $\G$ uma árvore com $n+1 $ vértices, e seja $v_{n+1}$ um vértice escolhido de tal forma que $deg(v_{n+1})=1$. Seja ainda $\G'=\G-v_{n+1}$. Temos que $\G'$ tem $n$ vértices, e que é uma árvore (verifique!), e portanto tem $n-1$ arestas. Logo $\G$ tem $n$ arestas.  
+
+$(1)\imply (4)$ é análogo.
+
+$(4)\imply (3)$. Se $\G$ é acíclico, então é uma floretsa com $k$ componetes conexas $\G_1,\G_2,\dots,\G_k$ que são árvores. Logo, aplicando $(1)\imply (3)$ a cada uma destas componentes, obtemos $p-k$ arestas em $\G$, pelo que, e sabendo que $\G$ tem $q$ arestas e $p-1=q$, se conclui que $k=1$, ou seja $\G$ é conexo.
+
+$(4)\imply(2)$. Suponha que (4) é válida, mas que (2) é falsa. Ou seja, ou que existem dois caminhos elemenatares entre dois vértices, ou que não existe caminho elementar algum. O primeiro caso implica a existência de um ciclo, o segundo a não conexidade do grafo. \epf
+
+Finalmente, dizemos que uma aresta de $\G$ é uma ponte se a eliminação dessa aresta aumenta o número de componentes do grafo. â imediato verificar-se que todas as arestas de uma árvore são pontes. De facto, se $\G$ é uma árvore e $v,w$ são vértices  tais que $\{v,w\}$ não é ponte, então existe $\gamma$  caminho $v-w$ que não contenha a aresta $\{v,w\}$. Ora a inclusão da aresta $\{v,w\}$ cria um caminho fechado, e portanto a existência de um ciclo.
+
+\section{Grafos planares}
+
+Um grafo diz-se planar se for possível desenhá-lo de tal forma que duas arestas não se intersectem à excepção nos vértices inicial e final. Por exemplo, o cubo é um grafo planar já que pode ser desenhado como
+$$\xymatrix{
+1 \linha[rrr]\linha[rd] & & &2 \linha[ld] \linha[ddd]\\
+& 5\linha[d] \linha[r] & 6 \linha[d] &\\
+& 8 \linha[r] \linha[ld] & 7 &\\
+4 \linha[rrr]\linha[uuu]&  & &3\linha[lu]}$$
+Outro exemplo de grafo planar é $K_4$ (verifique!), e o objectivo desta secção é caracterizar tais grafos. Um resultado relevante no estudo da planaridade de grafos é o {\it Teorema de Kuratowski}, que passamos a enunciar:
+
+Um grafo é planar se e só se não tem nenhum subgrafo homeomorfo a  $K_5$ ou $K_{3,3}$.
+
+
+\
+
+Antes de compreendermos o enunciado, é importante apresentar mais definiç\~oes e alguns resultados.
+
+\
+
+Um grafo planar divide o plano em regi\~oes, à custa das suas arestas. Cada uma destas divis\~oes é denominada por face do grafo. Dois pontos do plano estão na mesma face se existir uma curva do plano que os une sem intersectar nenhuma das arestas do grafo. No grafo apresentado atrás, existem 6 faces (a face ``exterior'' é contabilizada! -- esta é denominada por face infinita, ou face exterior). A fronteira de uma face, $fr(F)$, é o conjunto das arestas que delimitam a face $F$, ou que estão contidas em $F$.
+
+\begin{theorem}[Fórmula de Euler]
+Dado um grafo planar conexo $(p,q)$ com $f$ faces,
+$$p+f=q+2.$$
+\end{theorem}
+\proof
+Se $f=1$ então o grafo é acíclico, e sendo conexo segue que é uma árvore. Como foi provado na secção anterior, $q=p-1$ e a fórmula é válida.
+
+Suponhamos agora que $f>1$; a igualdade é provada por indução sobre o número de arestas.\\
+Se $q=1$ então $p=2$ e $f=1$, ou então $p=1$, e portanto $f=2$. Uma representação destes dois casos é, respectivamente,
+$$\xymatrix{
+\bullet \linha[r]& \bullet} \hspace*{2cm} \xymatrix{ \bullet \laco}$$
+Em qualquer um dos casos, a fórmula é válida quando $q=1$.\\
+Suponhamos agora que $f-q+p=2$ para grafos com mais que 1 face com $q$ arestas. Seja $\G$ um grafo conexo com $q+1$ arestas e mais que uma face. Seja $F$ a face infinita. Existe então um ciclo $\gamma$ contido na fronteira de $F$. Defina-se $\G'$ como o grafo obtido de $\G$ a que se retirou uma aresta $e$ de $\gamma$. Tem-se que, como $e$ é aresta de um ciclo, o grafo $\G'$ é conexo, planar e com $q$ arestas. Sejam $f',q',p'$ o número de faces, arestas e vértices, respectivamente, de $\G'$. As igualdade seguintes são válidas: $p=p',q=q'+1,f=f'+1$. Se $f'>1$, então pela hipótese de indução $f'-q'+p'=2$, e logo $f-q+p=2$. Se $f'=1$ então $f'-q'+p'=2$ pelo que foi visto no início da demonstração, o que implica que $f-q+p=2$. \epf
+
+Vejamos um exemplo:
+$$\xymatrix{\bullet \linha[rrr]\linha[rrrdd]^{F_2}\linha[dd] & & & \bullet\linha[dd]^{F_3}\linha[r] & \bullet\\
+&\bullet\linha[ld]_{F_1} & & & \\
+\bullet\linha[rrr] & & & \bullet & }$$
+
+O grafo planar acima apresentado tem 3 faces, mas apenas uma delas tem um ciclo como fronteira. 
+
+\
+
+Vejamos algumas consequências da fórmula de Euler:
+\begin{corollary}
+Dado um $(p,q)$-grafo planar conexo com $f$ faces tal que cada uma tem como fronteira um ciclo de comprimento $n$, então $q=\frac{n(p-2)}{n-2}$.
+\end{corollary}
+\proof Visto cada face ter $n$ arestas e cada aresta está em fronteiras de 2 faces distintas, segue que $nf=2q$. Sendo $p-q+f=2$, então $np-nq+nf=2n$. Como $nf=2q$ segue que $q(2-n)=2n-np$. \epf
+
+\
+
+Um grafo planar diz-se maximal se não for possível acrescentar uma aresta (que não seja lacete) de forma a não se perder a planaridade do grafo.
+
+\begin{corollary}
+Se $\G$ é um grafo $(p,q)$ planar maximal então a fronteira de cada face é $C_3$ e $q=3p-6$. Se $\G$ é um  grafo $(p,q)$ planar tal que a fronteira de cada face é $C_4$ então $q=2p-4$.
+\end{corollary}
+\proof Basta substituir $n$ por 3 e 4, respectivamente.\epf
+
+Visto o número máximo de arestas ocorrer quando a fronteira de cada face é $C_3$, são válidos os resultados seguintes:
+\begin{corollary}
+Dado $\G$  um grafo $(p,q)$ planar, com $p\ge 3$, então $q\le 3p-6$. Se $\G$ não tem subgrafos do tipo $C_3$ então $q\le 2p-4$.
+\end{corollary}
+
+\begin{corollary}
+Os grafos $K_5$ e $K_{3,3}$ não são planares.
+\end{corollary}
+\proof Para $K_5$, $q=10>9=3p-6$, e para $K_{3,3}$, $q=9>8=2p-4$.\epf
+
+%Note-se ainda que o grafo de Petersen não é planar. Basta aplicar o Corolário anterior, sendo que $p=9$ e $q=15$.
+
+\begin{definition} Seja $\G=(\V_\G ,\A_\G)$ um grafo. 
+\ben
+\item Se $e=\{u,v\} \in \A_\G$, com $u\ne v$, uma subdivisão de $e$ consiste na inserção de $w$ em $\V_\G$ e na substituição de $e$ por $e'=\{u,w\},e''=\{w,v\}$.
+\item Se  $e=\{u,w\},e'= \{w,v\}$ e $deg(w)=2$, uma contracção de $w$ consiste  na remoção de $w$ de  $\V_\G$ e na substituição de $e,e'$ por $e''=\{u,v\}$.
+\item Uma subdivisão de $\G$ é um grafo obtido de $\G$ por subdivisão de arestas e/ou contracção de arestas.
+\een
+\end{definition}
+
+Um exemplo de cada um destes conceitos é, respectivamente,
+$$\xymatrix{\bullet \linha[r]_{e} & \bullet}\  \  \  \  \  \  \  \ 
+\xymatrix{
+\bullet \linha[r]_{e'} & \circ \linha[r]_{e''} & \bullet }$$ 
+$$\xymatrix{
+\bullet \linha[r]_{e'} & \circ \linha[r]_{e''} & \bullet }\  \  \  \  \  \  \  \ \xymatrix{\bullet \linha[r]_{e} & \bullet}$$
+
+\begin{definition}
+Dois grafos $\G,\H$ são homeomorfos se uma subdivisão de $\G$ for isomorfa a uma subdivisão de $\H$.
+\end{definition}
+
+Os grafos seguintes são homeomorfos mas não são isomorfos:
+$$\xymatrix{\bullet \linha[rd] &  & &\\
+\circ \linha[u]\linha[d]  & \bullet \linha[rr] && \bullet \\
+\bullet \linha[ru] &&&} \ \ \ \ \ \ \ 
+\xymatrix{\bullet \linha[rd] & & &\\
+ &  \bullet \linha[r] &\circ\linha[r]& \bullet \\
+\bullet\linha[uu] \linha[ru] &&&}$$
+
+Recordamos, então, o enunciado do Teorema de Kuratowski:
+\begin{theorem}[Teorema de Kuratowski]
+Um grafo é planar se e só se não tem nenhum subgrafo homeomorfo a  $K_5$ ou $K_{3,3}$.
+\end{theorem}
+
+Uma contracção elementar do grafo $\G$ consiste na substituição de dois vértices$u,v$ adjacentes por um novo vértice $w$, acrescentando-se arestas de tal forma que $w$ seja vizinho de todos os vizinhos de $u,v$.
+
+Por exemplo, considere o grafo
+$$\xymatrix{
+&  u \linha[ld] \linha[ldd]\linha[rdd] \linha[rd] & \\
+y \linha[d]  \linha[rrd] && v\linha[d]\linha[lld]\\
+x \linha[rr] && w}$$
+Vamos remover os vértices $u$ e $v$, assim como as arestas adjacentes a eles, acrescentando um vértice $t$ bem como arestas de forma a que $t$ seja vizinho dos vértices que o eram de $u$ ou de $v$:
+$$\xymatrix{
+y\linha[r]\linha[rd]\linha[d] & t\linha[d] \\ 
+x\linha[r]\linha[ru] & w}$$
+
+Um grafo $\G$ diz-se contractível num grafo $\H$ se $\H$ puder ser obtido de $\G$ por contracç\~oes elementares. Por exemplo, o grafo apresentado atrás é contractível em $K_4$.
+
+O resultado seguinte dá-nos outra forma de caracterizar os grafos planares:
+\begin{theorem}[Teorema de Wagner-Harary-Tutte]
+Um grafo é planar se e só se não tiver um subgrafo contractível em $K_5$ ou $K_{3,3}$.
+\end{theorem}
+
+%Este teorema permite-nos mostrar a não planaridade do grafo de Petersen de uma forma alternativa à apresentada atrás. De facto, este é contractível em $K_5$ e em $K_{3,3}$:
+
+%$$\xymatrix{  & & \bullet \linha[lldd] \linha[d] \linha[rrdd] & &  \\& & \linha[ldd]\linha[rdd]\circ & &\\ \bullet\linha[dd]\linha[r] &   \circ\linha[rr] \linha[rrd]& & \circ\linha[r]\linha[lld]  & \bullet\linha[dd] \\  & \circ \linha[ld]  & & \circ\linha[rd] &\\ \bullet \linha[rrrr]  & & & &\bullet }\ \ \ \ \
+%\xymatrix{
+%&  \bullet \linha[ld] \linha[ldd]\linha[rdd] \linha[rd] & \\
+%\bullet \linha[d] \linha[rr] \linha[rrd] && \bullet\linha[d]\linha[lld]\\
+%\bullet \linha[rr] && \bullet}
+%$$
+
+\section{Grafos eulerianos e grafos hamiltonianos}
+Um {\em caminho euleriano} num grafo é um caminho simples que contém {\em todas} as arestas do grafo. Um {\em circuito euleriano } é um caminho euleriano fechado. Um grafo diz-se {\em grafo euleriano} se contém um circuito euleriano.
+
+
+Historicamente, os caminhos eulerianos estão associados à génese da teoria de grafos, essencialmente à custa das pontes de K\"onigsberg (actual Kalingrado, no enclave russo entre a Polónia e a Lituânia). A questão era saber se seria possível passar exactamente uma vez em cada ponte, voltando ao ponto de partida.
+	\begin{center}
+% Konigsberg_bridges.eps: 300dpi, width=2.57cm, height=2.02cm, bb=14 14 317 253
+	\end{center}
+
+ Em 1736, Leonhard Euler mostrou que tal não é possível. O multi-grafo associado ao problema é
+$$\xymatrix{
+ & w  \ar@{-}@/_/[ld]\linha[rd] &\\
+u \ar@{-}@/_/[ru]\ar@{-}@/_/[rd] \linha[rr] &&v \\
+&x \ar@{-}@/_/[lu] \linha[ru] &}$$
+
+\begin{theorem}
+Seja $\G=(\V_\G,\A_\G)$ um (multi-)grafo. São equivalentes:
+\ben
+\item $\G$ é euleriano.
+\item $deg(v)$ é par, para todo o $v\in \V_\G$.
+\item $\A_\G$ é a união de ciclos disjuntos.
+\een
+\end{theorem}
+\proof
+
+$(1)\imply (2)$. Seja $\gamma$ um circuito euleriano. Como passa por  todas as arestas, então passa por todos os vértices. Para qualquer vértice $v$, $\gamma$ passa por $v$, e como não repete arestas, então o número de arestas que incidem em $v$ é par.
+
+$(2)\imply (3)$. Suponhamos agora que $deg(v)$ é par. Como o grafo é conexo, então o grau de qualquer vértice é um par não nulo. Portanto, o grafo não é uma árvore, e portanto existe um ciclo $\gamma$ em $\G$. Defina-se o grafo $\G'$ como o grafo obtido de $\G$ removendo as arestas de $\gamma$. Note-se que os graus dos vértices de $\G'$ continuam a sere números pares. Se $\G'$ não tem arestas (o que correponde ao caso em que $\gamma$ contém todas as arestas de $\G$) então (3) está provado. Caso contrário, repete-se o algoritmo de remoção de arestas.
+
+$(3)\imply (1)$. Seja $\gamma$ um ciclo da partição do conjunto das arestas.  Se $\gamma$ é o único ciclo, então $\G$ é euleriano. Caso contrário, existe um outro ciclo $\gamma'$ com um vértice $v$ comum com $\gamma$ (recorde que o grafo é conexo). Considere a concatenação $\gamma \circ \gamma'$. Este caminho, iniciado (e terminado) em $v$ é um circuito. Repetindo o algoritmo, obtemos um circuito que contém todas as arestas, e logo o grafo é euleriano. \epf
+
+Como aplicação, o teorema anterior mostra que um grafo cúbico (e em particular o cubo e o grafo de Petersen) não é euleriano. O grafo
+$$\xymatrix{
+&  u \linha[ld] \linha[ldd]\linha[rdd] \linha[rd] & \\
+y \linha[d]  \linha[rrd] && v\linha[d]\linha[lld]\\
+x \linha[rr] && w}$$
+também não é euleriano, já que o grau do vértice $y$ (e de $v$) não é par.
+
+A demonstração do teorema anterior, por outro lado, fornece-nos uma construção de um circuito euleriano, no caso de grafo dado ter os vértices de grau par. Considere, como exemplo, o grafo $K_5$:
+$$\xymatrix{
+&  u \linha[ld] \linha[ldd]\linha[rdd] \linha[rd] & \\
+y \linha[d]  \linha[rrd]\linha[rr] && v\linha[d]\linha[lld]\\
+x \linha[rr] && w}$$
+Os ciclos disjuntos (nas arestas) que formam o grafo são
+\begin{center}
+\begin{tabular}{ccc}
+$\xymatrix{
+&  u \linha[ld] \linha[ldd] & \\
+y \linha[d]   && \\
+x  && }$  &
+$\xymatrix{
+&  u  \linha[rdd] \linha[rd] & \\
+ && v\linha[d]\\
+ && w}$\hspace*{1cm} &
+$\xymatrix{
+&&\\
+y   \linha[rrd]\linha[rr] && v\linha[lld]\\
+x \linha[rr] && w}$\\
+$\gamma_1=uxyu$ & $\gamma_2=uwvu$ & $\gamma_3=ywxvy$
+\end{tabular}
+\end{center}
+
+Atentando, em primeiro lugar, nos ciclos $\gamma_1$ e $\gamma_2$, estes têm o vértice $u$ em comum. Seja $\gamma_4=\gamma_1 \circ \gamma_2$, que é um circuito:
+$$\xymatrix{
+&  u \linha[ld] \linha[ldd]\linha[rdd] \linha[rd] & \\
+y \linha[d]   && v\linha[d]\\
+x  && w}$$
+Este circuito tem, por exemplo, o vértice $y$ em comum com $\gamma_3$. Façamos então a concatenação, esgotando, portanto, as arestas disponíveis. Um circuito euleriano é, por exemplo, o que se inicia (e termina) em $u$, percorre $\gamma_4$ até encontrar $y$, faz um "desvio" percorrendo $\gamma_3$, para depois continuar o percurso em  $\gamma_4$ regressando a $v$ . Ou seja, $uxywxvyuwvu$.
+
+\
+
+Um {\em caminho hamiltoniano} num grafo é um caminho elementar que contém  {\em todos} os vértices do grafo. Um {\em ciclo hamiltoniano } é um ciclo  que contém {\em todos} os vértices do grafo. Um grafos diz-se {\em grafo hamiltoniano} se contém um ciclo hamiltoniano.
+
+É importante salientar que o problema de se saber se certo grafo hamiltoniano é NP-completo. Ou seja, e simplicando, é simples testar que um ciclo é hamiltoniano, mas o problema recíproco de se encontrar um ciclo hamiltoniano é difícil. Ou seja, não se encontrou, até à data, um algoritmo que resolva tal problema em tempo razoável (no tamanho do {\em input}). Existem, no entanto, condiç\~oes necessárias e outras suficientes que permitem, em alguns casos, testar se o grafo é (ou não) hamiltoniano de uma forma fácil.
+
+Se o grafo $\G$ é hamiltoniano então
+\ben
+\item[\# 1.] se $deg(v)=2$ então as arestas incidentes em $v$ estão em qualquer ciclo hamiltoniano;
+\item[\# 2.] na construção de um ciclo hamiltoniano, nenhum ciclo se pode formar até se percorrerem os vértices todos;
+\item[\# 3.] se na construção de um ciclo hamiltoniano 2 arestas que  incidem em $v$ não podem ser eliminadas, então as restantes que incidem em $v$ podem-no.
+\een
+
+Com base nestas regras, vamos mostrar que o seguinte grafo não é hamiltoniano:
+$$\xymatrix{
+a \linha[r]\linha[d] & b \linha[r]\linha[rd] & c \linha[d]\\
+h \linha[ru]\linha[rd]\linha[r]\linha[d] & i \linha[r] & d \linha[d]\\
+g \linha[r] & f \linha[ru]\linha[r] & e}$$
+
+Suponha que o grafo é hamiltoniano. Como os vértices $a,c,e,g$ têm grau dois, as arestas $$ab,ah,cb,cd,ed,eg,gf,gh$$ estão em {\em qualquer} ciclo hamiltoniano, pela regra 1. Aplicando a regra 3 aos vértices $d$ e $h$, as arestas $hb,hi,hf,db,di,df$ podem ser eliminadas. Mas ficamos então com o ciclo $abcdefgha$ que não passa por $i$, o que viola a regra 2.
+
+\begin{theorem}[Ore, 1960] Se um $n-$grafo simples com 3 ou mais vértices satisfaz $deg(v)+deg(w)\ge n$ para quaisquer vértices não vizinhos um do outro, então o grafo é hamiltoniano.
+\end{theorem}
+
+\begin{corollary}[Dirac, 1952]
+Seja $\G$ um grafo simples com 3 ou mais vértices, vértices esses que têm grau não inferior à metade do número de vértices. Então $\G$ é hamiltoniano.
+\end{corollary}
+
+Com base nestes resultados, segue que $K_4,K_5,K_{3,3}$ são hamiltonianos. O grafo $W_5$, apresentado em baixo, é também hamiltoniano:
+$$\xymatrix{
+ & \bullet \ar@{-}@/^.4cm/[rd]\linha[d] &\\
+\bullet\ar@{-}@/^.4cm/[ru] \linha[r] & \bullet \linha[r] & \bullet\ar@{-}@/^.4cm/[ld]\\
+& \bullet \ar@{-}@/^.4cm/[lu]\linha[u] & }$$
+
+
+\section{Colora\c c\~oes}
+
+Seja $\G=(\V_\G,\A_\G)$ um grafo. Uma coloração de $\G$ é uma aplicação $f:\V_\G \rightarrow C$ tal que $f(v)\ne f(w)$ se $v\leftrightarrow w$, onde $C$ é um conjunto cujos elementos se chamam {\em cores}. Uma $k-$coloração é uma coloração $f$ tal que $\#f(\V_\G)=k$. O número cromático de $\G$, denotado por $\chi(\G)$, é o menor $k$ tal que existe uma $k-$coloração de $\G$. Por outras palavras, o número cromático de um grafo é o menor número de cores necessárias de forma a que dois vértices vizinhos tenham cores distintas. Por exemplo, um grafo bipartido com pelo menos uma aresta tem número cromático 2. Já o grafo completo $K_n$ tem número cromático $n$.
+
+\begin{theorem}[Teorema das 5 cores, P.J.Heawood, 1890]
+Seja $\G$ um grafo simples planar. Então $\chi(\G)\le 5$.
+\end{theorem}
+
+\begin{conj}[Conjectura das 4 cores, F.Guthrie, 1852]
+O número cromático de qualquer grafo planar é não superior a  4.
+\end{conj}
+
+
+\begin{thebibliography}{99}
+\addcontentsline{toc}{section}{ \hspace*{0.45cm}Referências bibliográficas}
+
+\bibitem{Barnett} Stephen Barnett, {\em  Discrete mathematics: numbers and beyond}, Addison-Wesley Longman, 1998 (ISBN 0-201-34292-8).
+\bibitem{Gross} Jonathan Gross, Jay Yellen, {\em  Graph theory and its applications}, CRC Press, 1999 (ISBN 0-8493-3982-0).
+\bibitem{Harary} Frank Harary, {\em  Graph theory}, Addison-Wesley Publ., 1972 (ISBN 0-201-02787-9).
+\bibitem{hartwig} Robert E. Hartwig, {\em Directed graphs}, notas não publicadas, North Carolina State University, 2002.
+\bibitem{Silva} Ilda Perez F. da Silva, {\em Tópicos de Matemática Finita}, edição da A.E.F.C.L., 1992.
+\bibitem{Truss} J. K. Truss, {\em  Discrete mathematics for computer scientists}, Addison-Wesley Publ., 1999 (ISBN 0-201-36061-6).
+\end{thebibliography}
+
+\end{document}
