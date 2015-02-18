@@ -1,1 +1,0 @@
-exiftool '-Directory<CreateDate' -d newdir/%Y/%m/%d -r unsorted

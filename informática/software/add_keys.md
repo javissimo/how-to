@@ -1,3 +1,0 @@
-``` bash
-sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com keyid
-```

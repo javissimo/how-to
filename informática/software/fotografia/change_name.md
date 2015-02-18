@@ -1,1 +1,0 @@
-find . -type f -name \*.JPG -exec sh mvjpg.sh {} + 

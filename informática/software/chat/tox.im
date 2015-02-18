@@ -1,2 +1,0 @@
-wget -qO - https://repo.tox.im/tox-apt.sh | bash
-sudo apt-get install qtox
