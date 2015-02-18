@@ -41,7 +41,7 @@ apps=$(zenity --list --text "Select the launcher box and press OK" --width=300 -
     make
     sudo make install
     sudo apt-get install guake git deadbeef qtox audio-recorder shutter npm apache2 php5 libapache2-mod-php5 mysql-server php5-gd libssh2-php php5-mysql tcpdump vim openjdk-7-jdk openjdk-7-jre openshot pychess python qbittorrent eclipse exuberant-ctags fslint htop httrack musescore musixtex gnupg handbrake easytag ruby ruby-dev nodejs rawtherapee audacity wireshark cheese pandoc texlive-full texmaker libreoffice
-	cd 
+    cd 
     git clone https://github.com/doxygen/doxygen.git
     cd doxygen
     ./configure
@@ -49,8 +49,8 @@ apps=$(zenity --list --text "Select the launcher box and press OK" --width=300 -
     sudo make distclean
     git pull
     ./configure
-	make
- 	sudo make install
+    make
+    sudo make install
     cd /tmp
     wget http://production.cf.rubygems.org/rubygems/rubygems-2.4.6.tgz
     tar xvf rubygems-2.4.6.tgz
@@ -63,9 +63,9 @@ apps=$(zenity --list --text "Select the launcher box and press OK" --width=300 -
     sudo apt-mark hold hostapd
     cd ~ && mkdir -p ~/.temp-plank-themer && cd ~/.temp-plank-themer && wget https://github.com/rhoconlinux/plank-themer/archive/master.zip && unzip master.zip && cd plank-themer-master/ && rm -fR ~/.config/plank/dock1/theme_index; rm -fR ~/.config/plank/dock1/themes-repo; cp -a theme_index/ ~/.config/plank/dock1 && cp -a themes-repo/ ~/.config/plank/dock1 && cd ~ && rm -R ~/.temp-plank-themer && sh ~/.config/plank/dock1/theme_index/plank-on-dock-themer.sh
     sudo python -c "import sys; py3 = sys.version_info[0] > 2; u = __import__('urllib.request' if py3 else 'urllib', fromlist=1); exec(u.urlopen('http://status.calibre-ebook.com/linux_installer').read()); main()"
-	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
+    git clone git://github.com/amix/vimrc.git ~/.vim_runtime
     sh ~/.vim_runtime/install_awesome_vimrc.sh
-   	npm -g install instant-markdown-d
+    npm -g install instant-markdown-d
     sudo npm -g install instant-markdown-d
     mkdir ~/.vim/
     mkdir ~/.vim/after/
