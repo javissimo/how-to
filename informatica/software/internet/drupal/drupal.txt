@@ -1,0 +1,500 @@
+ls
+exit
+ifconfig -help
+df -h
+cd /media/javier/Media/Downloads PC/Matlab R2013b
+ls
+cd ..
+cd DownloadsPC/
+cd Matlab\ R2013b/
+ls
+cd matlab_R2013b_glnxa64_installer/
+ls
+cd install
+sudo sh install
+cd sys/java/jre/glnxa64/jre/bin/
+chmod +x java
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+sudo sh install
+cd
+sudo apt-get install cowbell
+sudo apt-get remove cowbell
+sudo apt-get install easytag 
+exit
+wget http://www.sbrac.org/files/build-gnuradio && chmod a+x ./build-gnuradio && ./build-gnuradio
+chmod a+x ./build-gnuradio && ./build-gnuradio 
+gnuradio-companion 
+./build-gnuradio 
+exit
+cd MatInstall/matlab_R2013b_glnxa64_installer/
+ls
+cd sys/java/jre/glnxa64/jre/bin
+chmod a+x *
+cd ~/MatInstall/matlab_R2013b_glnxa64_installer/
+sudo sh install
+python
+cd
+cd Downloads/picard-1.2/
+ls
+sudo python setup.py install
+picard &
+python setup.py build_ext -i
+sudo python setup.py build_ext -i
+sudo python setup.py build_locales -i
+python tagger.py
+python tagger.py 
+exit
+gem
+sudo apt-get install ruby
+sudo apt-get install ruby
+gem install jekyll
+sudo gem install jekyll
+gem
+gem install rake
+sudo gem install rake
+sudo su
+sudo gem update --system
+exit
+sudo gem install jekyll
+sudo apt-get install curl
+curl -sSL https://get.rvm.io | bash -s stable
+source /home/javier/.rvm/scripts/rvm
+rvm requirements
+sudo apt-get install nodejs
+jekyll
+gem install jekyll
+sudo gem install jekyll
+sudo gem update --system
+sudo apt-get install rubygems
+sudo apt-get install ruby
+sudo apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get autoremove
+sudo apt-get remove scons 
+sudo apt-get install make
+sudo gem install jekyll
+sudo gem install compass
+sudo apt-get install ruby
+sudo apt-get install rubygems
+sudo apt-get install nodejs
+sudo gem install jekyll
+sudo gem install rubygems
+sudo gem install rubygems-update
+sudo update_rubygems 
+sudo gem install jekyll
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get autoremove
+exit
+sudo ruby setup.rb 
+sudo gem install jekyll
+exit
+sudo apt-get autoclean
+sudo apt-get autoclean
+ruby
+ruby -help
+ruby --version
+sudo gem install jekyll
+sudo apt-get install ruby-dev 
+sudo gem install jekyll
+jekyll
+jekyll v
+jekyll -v
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo apt-get update
+jekyll -s
+jekyll serve
+cd workspace/
+mkdir javissimo.github.io
+cd javissimo.github.io/
+sl
+ls
+cd
+sudo gem install compass
+cd workspace/javissimo.github.io/
+jekyll serve
+jekyll serve
+sudo jekyll serve
+sudo jekyll serve
+sudo jekyll serve
+jekyll serve
+clear
+sudo jekyll serve
+sudo jekyll serve
+sudo jekyll serve --watch
+git clone https://github.com/javissimo/javissimo.github.io
+sudo jekyll serve --watch
+cd ..
+sudo rmdir -f javissimo.github.io/
+sudo rmdir --force javissimo.github.io/
+sudo rmdir -r javissimo.github.io/
+git clone https://github.com/javissimo/javissimo.github.io
+cd javissimo.github.io/
+sudo jekyll serve --watch
+cd ..
+sudo jekyll serve --watch
+git clone https://github.com/javissimo/travelog-theme
+cd travelog-theme/
+jekyll serve -w
+cd ..
+jekyll serve -w
+cd javissimo.github.io/
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+sudo gem install nokogiri
+jekyll serve -w
+sudo gem install thypoeus
+sudo gem install typhoeus
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+irb -r rubygems
+irb -r rubygems
+irb -r rubygems
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+irb -r rubygems
+irb -r rubygems
+jekyll serve -w
+jekyll serve -w
+sudo gem install flickraw
+jekyll serve -w
+jekyll serve -w
+irb -r rubygems
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+irb -r rubygems
+irb -r rubygems
+irb -r rubygems
+irb -r rubygems
+gem remove fleakr
+gem --help
+gem help
+gem help commands
+gem --list
+gem list
+gem uninstall fleakr
+sudo gem uninstall fleakr
+gem list
+sudo gem uninstall flickraw
+cd ..
+cd fleakr/
+sudo gem build fleakr.gemspec 
+sudo gem install fleakr-0.7.1.gem 
+irb -r rubygems
+cd workspace/javissimo.github.io/
+compass create
+ls
+git clone https://github.com/javissimo/javissimo.github.io
+jekyll serve
+git push origin master
+git init
+git remote add origin git@github.com:javissimo/javissimo.github.io.git
+git push -u origin master
+sublimetext2
+sublime-text2
+sublime-text
+git config --list
+git init
+cd ..
+git init
+cd javissimo.github.io/
+git init
+git status
+git status
+git add *
+git add -f *
+git add --all
+git add --ignore-removal
+git add .
+git status
+git commit .
+git commit "new design"
+git commit . -m  "new design"
+git push origin master
+git add .
+git commit -m ""
+git commit -m "deleted post"
+git push origin master
+git status
+git add/rm .
+git checkout
+git commit -m "deleted post"
+git commit . -m "deleted post"
+git push origin master
+gem fleakr
+gem fleackr
+gem status
+gem -help
+gem --help
+gem list --local
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+git add .
+git commit . -m "a few little changes"
+git push origin master
+jekyll serve -w
+git add .
+git commit . -m "removed stuff"
+git push origin master
+git add .
+git commit . -m "CNAME recovered"
+git push origin master
+git add .
+git commit . -m "favicon.ico"
+git push origin master
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+git add .
+git commit . -m "pages, archive"
+git push origin master
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+git add .
+git commit . -m "pages reconfigured"
+git push origin master
+jekyll serve -w
+cd workspace/antiguo/
+jekyll serve -w 5000
+jekyll serve -w 5000
+jekyll -help
+jekyll serve:5000 -w
+jekyll serve -w
+jekyll serve -w
+cd
+sudo gem install fleakr
+cd workspace/
+git clone git://github.com/reagent/fleakr.git
+cd fleakr/
+ls
+git clone https://github.com/base10/fleakr
+rake gem && sudo gem install pkg/fleakr.gem
+sudo apt-get install rake
+rake gem && sudo gem install pkg/fleakr.gem
+sudo gem install rake
+rake gem && sudo gem install pkg/fleakr.gem
+sudo gem install pkg/fleakr.gem
+cd ..
+cd
+cd workspace/
+git clone https://github.com/base10/fleakr
+cd fleakr/
+sudo gem install pkg/fleakr.gem
+gem build fleakr.gemspec 
+gem install fleakr.gem
+sudo gem install fleakr-0.7.1.gem 
+cd workspace/
+cd javi
+cd javissimo.github.io/
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+sudo gem install redcarpet
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+sudo gem install rouge
+jekyll serve -w
+sudo gem uninstall rouge
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w
+jekyll serve -w --drafts
+sudo gem install mathjax
+sudo apt-get install texmaker
+texmaker &
+sudo apt-get install texlive-full 
+sudo apt-get install pandoc
+sudo apt-get upgrade
+sudo apt-get autopurge
+sudo apt-get autoremove
+pandoc
+pandoc &
+pkill 11541
+pandoc
+mkdir pandoc
+cd pandoc/
+pandoc colophon -f markdown -t latex -s -o test.tex
+pandoc colophon.md -f markdown -t latex -s -o test.tex
+open .
+cp ~/.bash_history ~/history.txt
+df -h
+cd workspace/javissimo.github.io/
+jekyll serve -w
+cd workspace/javissimo.github.io/
+jekyll serve -w
+gem --list
+gem --help
+clear
+gem --list local
+gem --list -local
+gem --help
+gem list --local
+cd workspace/javissimo.github.io/
+jekyll serve -w
+cd pandoc/
+pandoc colophon -f markdown -t latex -s -o test.tex
+cd pandoc/
+pandoc deutsch.md -f markdown -t latex -s -o deutsch.tex && pdftex deutsch.tex
+clear
+pandoc deutsch.md -f markdown -t latex -s -o deutsch.tex
+pdftex deutsch.tex 
+sudo su
+cd pandoc/
+pandoc deutsch.md -f markdown -t latex -s -o deutsch.tex
+cd workspace/
+gem --list local
+gem list --local
+sudo gem install rails
+rails hosteleria_maribel
+rails new hosteleria_maribel
+gem install spree
+script
+sudo gem install spree
+spree install hosteleria_maribel
+spree install hosteleria_maribel/
+sudo apt-get install imagemagick
+spree install hosteleria_maribel/
+cd hosteleria_maribel/
+bundle exec rake test_app
+rails server
+bundle install
+bundle exec rails g spree_fancy:install
+rails server
+rails server
+cd ../javissimo.github.io/
+jekyll -s watch
+jekyll -s --watch
+jekyll -s -watch
+jekyll serve --watch
+cd Downloads/
+tar zxvf drupal-7.31.tar.gz 
+mv drupal-7.31 /var/www/
+sudo mv drupal-7.31 /var/www/
+script drupal
+cd /var/www/
+ls
+drush dl drupal --drupal-project-rename=hosteleriamaribel
+sudo apt-get install drush
+drush dl drupal --drupal-project-rename=hosteleria_maribel_drupal
+ls
+cd
+cd workspace/
+drush dl drupal --drupal-project-rename=hosteleria_maribel_drupal
+cd hosteleria_maribel_drupal/
+drush site-install standard --db-url=mysql://javier:5yi2mrbr@localhost/hosteleria_maribel
+sudo apt-get install mysql-server
+sudo apt-get install php5-mysql
+drush site-install standard --db-url=mysql://javier:5yi2mrbr@localhost/hosteleria_maribel
+sudo apt-get install php5
+drush site-install standard --db-url=mysql://javier:5yi2mrbr@localhost/hosteleria_maribel
+sudo apt-get install php5-gd
+sudo apt-get install php-db php5-mysql
+sudo /etc/init.d/apache2 restart
+drush site-install standard --db-url=mysql://javier:5yi2mrbr@localhost/hosteleria_maribel
+sudo drush site-install standard --db-url=mysql://javier:5yi2mrbr@localhost/hosteleria_maribel
+clear
+sudo drush site-install standard --db-url=mysql://javier:5yi2mrbr@localhost/hosteleria_maribel
+cd
+cd Downloads/
+ls
+cd /var/www/html/
+sudo mv ~/Downloads/drupal-7.31 /var/www/html/
+ls
+mv drupal-7.31/* drupal-7.31/.htaccess ./
+sudo mv drupal-7.31/* drupal-7.31/.htaccess ./
+ls
+rmdir drupal-7.31/
+sudo rmdir drupal-7.31/
+rmdir --force drupal-7.31/
+rmdir --help
+sudo rmdir --ignore-fail-on-non-empty drupal-7.31/
+ls
+mysqladmin -u javier -p create hosteleria_maribel
+sudo mysqladmin -u javier -p create hosteleria_maribel
+sudo mysqladmin -u admin -p create hosteleria_maribel
+sudo apt-get install mysql-server
+sudo apt-get -purge remove mysql-server
+sudo apt-get --purge remove mysql-server
+sudo apt-get --purge remove mysql-client
+sudo apt-get autoremove
+sudo apt-get autoclean
+sudo aptitude remove mysql-client
+sudo aptitude remove mysql-common
+service mysql status
+sudo apt-get install mysql-server
+sudo apt-get install mysql-client
+sudo apt-get install php5-mysql
+sudo mysqladmin -u javier -p create hosteleria_maribel
+mysqladmin -u javier -p 5yi2mrbr
+mysqladmin -u root -p 5yi2mrbr
+mysqladmin -u root -p password
+sudo mysqladmin -u root -p create hosteleria_maribel
+mysql -u root -p
+mysql -u root -p
+createuser --pwprompt --encrypted --no-adduser
+cp sites/default/default.settings.php sites/default/settings.php
+chmod a+w sites/default/settings.php
+chmod a+w sites/default
+chmod 644 sites/default/settings.php 
+chmod 644 sites/default/
+chmod a+w sites/default
+chmod a+w sites/default/settings.php
+sudo chmod a+w sites/default/settings.php
+chmod a+w sites/default
+chmod a+w sites/default/files 
+sudo chmod a+w sites/default/files 
+sudo chmod a+w sites/default/files 
+sudo chmod a+w sites/default/
+sudo chmod a+w sites/default/default.settings.php 
+sudo chmod a+w sites/default/settings.php

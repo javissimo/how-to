@@ -1,0 +1,1 @@
+recordmydesktop --channels 2 --fps 30 --windowid $(xwininfo | awk '/Window id:/ {print $4}')

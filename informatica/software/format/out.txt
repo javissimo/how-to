@@ -1,0 +1,1432 @@
+ * accountsservice -> query and manipulate user account information 
+ * acl -> Access control list utilities 
+ * acpi-support -> scripts for handling many ACPI events 
+ * acpid -> Advanced Configuration and Power Interface event daemon 
+ * add-apt-key -> Command line tool to add GPG keys to the APT keyring 
+ * adduser -> add and remove users and groups 
+ * adobe-flashplugin -> Adobe Flash Player plugin version 11 
+ * aglfn -> Adobe Glyph List For New Fonts 
+ * alarm-clock-applet -> Alarm Clock applet 
+ * alien -> convert and install rpm and other packages 
+ * alsa-base -> ALSA driver configuration files 
+ * alsa-utils -> Utilities for configuring and using ALSA 
+ * anacron -> cron-like program that doesn't go by time 
+ * ant -> Java based build tool like make 
+ * ant-optional -> Java based build tool like make - optional libraries 
+ * ap-hotspot -> Access Point Mode Hotspot 
+ * apache2 -> Apache HTTP Server 
+ * apache2-bin -> Apache HTTP Server (binary files and modules) 
+ * apache2-data -> Apache HTTP Server (common files) 
+ * apg -> Automated Password Generator - Standalone version 
+ * apt -> commandline package manager 
+ * apt-clone -> Script to create state bundles 
+ * apt-transport-https -> https download transport for APT 
+ * apt-utils -> package management related utility programs 
+ * apt-xapian-index -> maintenance and search tools for a Xapian index of Debian packages 
+ * aptdaemon -> transaction based package management service 
+ * aptdaemon-data -> data files for clients 
+ * aptitude -> terminal-based package manager 
+ * aptitude-common -> architecture indepedent files for the aptitude package manager 
+ * apturl -> install packages using the apt protocol - GTK+ frontend 
+ * apturl-common -> install packages using the apt protocol - common data 
+ * archdetect-deb -> Hardware architecture detector 
+ * aspell -> GNU Aspell spell-checker 
+ * aspell-en -> English dictionary for GNU Aspell 
+ * at -> Delayed job execution and batch processing 
+ * at-spi2-core -> Assistive Technology Service Provider Interface (dbus core) 
+ * atril -> MATE document viewer 
+ * atril-common -> MATE document viewer (common files) 
+ * audacity -> fast, cross-platform audio editor 
+ * audacity-data -> fast, cross-platform audio editor (data) 
+ * audio-recorder -> Audio recorder for GNOME and Unity Desktops. 
+ * avahi-autoipd -> Avahi IPv4LL network address configuration daemon 
+ * avahi-daemon -> Avahi mDNS/DNS-SD daemon 
+ * avahi-utils -> Avahi browsing, publishing and discovery utilities 
+ * base-files -> Debian base system miscellaneous files 
+ * base-passwd -> Debian base system master password and group files 
+ * bash -> GNU Bourne Again SHell 
+ * bash-completion -> programmable completion for the bash shell 
+ * bc -> GNU bc arbitrary precision calculator language 
+ * bind9-host -> Version of 'host' bundled with BIND 9.X 
+ * binfmt-support -> Support for extra binary formats 
+ * bitlbee -> An IRC to other chat networks gateway (default version) 
+ * bitlbee-common -> An IRC to other chat networks gateway (common files/docs) 
+ * bitlbee-plugin-otr -> An IRC to other chat networks gateway (OTR plugin) 
+ * bluetooth -> Bluetooth support 
+ * bluez -> Bluetooth tools and daemons 
+ * bluez-alsa -> Bluetooth ALSA support 
+ * bluez-alsa:i386 -> Bluetooth ALSA support 
+ * bluez-cups -> Bluetooth printer driver for CUPS 
+ * bluez-gstreamer -> Bluetooth GStreamer support 
+ * brasero -> CD/DVD burning application for GNOME 
+ * brasero-cdrkit -> cdrkit extensions for the Brasero burning application 
+ * brasero-common -> Common files for the Brasero CD burning application and library 
+ * brltty -> Access software for a blind person using a braille display 
+ * bsdmainutils -> collection of more utilities from FreeBSD 
+ * bsdutils -> Basic utilities from 4.4BSD-Lite 
+ * busybox-initramfs -> Standalone shell setup for initramfs 
+ * busybox-static -> Standalone rescue shell with tons of builtin utilities 
+ * bzip2 -> high-quality block-sorting file compressor - utilities 
+ * ca-certificates -> Common CA certificates 
+ * ca-certificates-java -> Common CA certificates (JKS keystore) 
+ * cabextract -> Microsoft Cabinet file unpacker 
+ * caja -> file manager for the MATE desktop 
+ * caja-common -> file manager for the MATE desktop (common files) 
+ * caja-extensions-common -> Caja extensions (common files) 
+ * caja-gksu -> privilege granting extension for caja using gksu 
+ * caja-open-terminal -> caja plugin for opening terminals in arbitrary local paths 
+ * calibre -> e-book converter and library management 
+ * calibre-bin -> e-book converter and library management 
+ * casper -> Run a "live" preinstalled system from read-only media 
+ * cdparanoia -> audio extraction tool for sampling CDs 
+ * cheese -> tool to take pictures and videos from your webcam 
+ * cheese-common -> Common files for the Cheese tool to take pictures and videos 
+ * chessx -> chess database 
+ * chktex -> Finds typographic errors in LaTeX 
+ * cifs-utils -> Common Internet File System utilities 
+ * cli-common -> common files between all CLI packages 
+ * clisp -> GNU CLISP, a Common Lisp implementation 
+ * cm-super -> TeX font package (full version) with CM (EC) in Type1 in T1, T2*, TS1, X2 enc 
+ * cm-super-minimal -> TeX font package (minimal version) with CM/EC in Type1 in T1, T2*, TS1, X2 enc 
+ * colord -> system service to manage device colour profiles -- system daemon 
+ * command-not-found -> Suggest installation of packages in interactive bash sessions 
+ * command-not-found-data -> Set of data files for command-not-found. 
+ * compiz -> OpenGL window and compositing manager 
+ * compiz-core -> OpenGL window and compositing manager 
+ * compiz-gnome -> OpenGL window and compositing manager - GNOME window decorator 
+ * compiz-plugins-default -> OpenGL window and compositing manager - default plugins 
+ * compizconfig-settings-manager -> Compiz configuration settings manager 
+ * conky-all -> highly configurable system monitor (all features enabled) 
+ * console-setup -> console font and keymap setup program 
+ * consolekit -> framework for defining and tracking users, sessions and seats 
+ * context -> powerful TeX format 
+ * coreutils -> GNU core utilities 
+ * cowsay -> configurable talking cow 
+ * cpio -> GNU cpio -- a program to manage archives of files 
+ * cpp -> GNU C preprocessor (cpp) 
+ * cpp-4.8 -> GNU C preprocessor 
+ * cpufrequtils -> utilities to deal with the cpufreq Linux kernel feature 
+ * cracklib-runtime -> runtime support for password checker library cracklib2 
+ * crda -> wireless Central Regulatory Domain Agent 
+ * cron -> process scheduling daemon 
+ * cryptsetup -> disk encryption support - startup scripts 
+ * cryptsetup-bin -> disk encryption support - command line tools 
+ * cups -> Common UNIX Printing System(tm) - PPD/driver support, web interface 
+ * cups-browsed -> OpenPrinting CUPS Filters - cups-browsed 
+ * cups-bsd -> Common UNIX Printing System(tm) - BSD commands 
+ * cups-client -> Common UNIX Printing System(tm) - client programs (SysV) 
+ * cups-common -> Common UNIX Printing System(tm) - common files 
+ * cups-core-drivers -> Common UNIX Printing System(tm) - PPD-less printing 
+ * cups-daemon -> Common UNIX Printing System(tm) - daemon 
+ * cups-filters -> OpenPrinting CUPS Filters - Main Package 
+ * cups-filters-core-drivers -> OpenPrinting CUPS Filters - PPD-less printing 
+ * cups-pk-helper -> PolicyKit helper to configure cups with fine-grained privileges 
+ * cups-ppdc -> Common UNIX Printing System(tm) - PPD manipulation utilities 
+ * cups-server-common -> Common UNIX Printing System(tm) - server common files 
+ * curl -> command line tool for transferring data with URL syntax 
+ * dash -> POSIX-compliant shell 
+ * dbus-x11 -> simple interprocess messaging system (X11 deps) 
+ * dc -> GNU dc arbitrary precision reverse-polish calculator 
+ * dctrl-tools -> Command-line tools to process Debian package information 
+ * deadbeef -> Audio player for GNU/Linux systems with X11 
+ * debconf -> Debian configuration management system 
+ * debconf-i18n -> full internationalization support for debconf 
+ * debianutils -> Miscellaneous utilities specific to Debian 
+ * debugedit -> tool to mangle source locations in .debug files 
+ * dh-python -> Debian helper tools for packaging Python libraries and applications 
+ * dialog -> Displays user-friendly dialog boxes from shell scripts 
+ * dictionaries-common -> Common utilities for spelling dictionary tools 
+ * diffutils -> File comparison utilities 
+ * dkms -> Dynamic Kernel Module Support Framework 
+ * dmidecode -> SMBIOS/DMI table decoder 
+ * dmraid -> Device-Mapper Software RAID support tool 
+ * dmsetup -> Linux Kernel Device Mapper userspace library 
+ * dmz-cursor-theme -> Style neutral, scalable cursor theme 
+ * dnsmasq -> Small caching DNS proxy and DHCP/TFTP server 
+ * dnsmasq-base -> Small caching DNS proxy and DHCP/TFTP server 
+ * dnsutils -> Clients provided with BIND 
+ * doc-base -> utilities to manage online documentation 
+ * docbook -> standard SGML representation system for technical documents 
+ * docbook-dsssl -> modular DocBook DSSSL stylesheets, for print and HTML 
+ * docbook-to-man -> converter from DocBook SGML into roff man macros 
+ * docbook-xml -> standard XML documentation system for software and systems 
+ * docbook-xsl -> stylesheets for processing DocBook XML to various output formats 
+ * dosfstools -> utilities for making and checking MS-DOS FAT filesystems 
+ * dpkg -> Debian package management system 
+ * dpkg-dev -> Debian package development tools 
+ * dpkg-repack -> puts an unpacked .deb file back together 
+ * duplicity -> encrypted bandwidth-efficient backup 
+ * dvd+rw-tools -> DVD+-RW/R tools 
+ * dvidvi -> Manipulate .dvi files 
+ * dvipng -> convert DVI files to PNG graphics 
+ * e2fsprogs -> ext2/ext3/ext4 file system utilities 
+ * easytag -> viewing, editing and writing ID3 tags 
+ * eclipse-platform-data -> Eclipse platform without development plug-ins (data) 
+ * ecryptfs-utils -> ecryptfs cryptographic filesystem (utilities) 
+ * ed -> classic UNIX line editor 
+ * efibootmgr -> Interact with the EFI Boot Manager 
+ * eject -> ejects CDs and operates CD-Changers under Linux 
+ * enchant -> Wrapper for various spell checker engines (binary programs) 
+ * engrampa -> archive manager for MATE 
+ * engrampa-common -> archive manager for MATE (common files) 
+ * eom -> Eye of MATE graphics viewer program 
+ * eom-common -> Eye of MATE graphics viewer program (common files) 
+ * esound-common -> Enlightened Sound Daemon - Common files 
+ * espeak-data -> Multi-lingual software speech synthesizer: speech data files 
+ * evolution-data-server -> evolution database backend server 
+ * evolution-data-server-common -> architecture independent files for Evolution Data Server 
+ * exuberant-ctags -> build tag file indexes of source code definitions 
+ * fakeroot -> tool for simulating superuser privileges 
+ * fastjar -> Jar creation utility 
+ * fcrackzip -> password cracker for zip archives 
+ * feynmf -> set of LaTeX macros for creating Feynman diagrams 
+ * file -> Determines file type using "magic" numbers 
+ * findimagedupes -> Finds visually similar or duplicate images 
+ * findutils -> utilities for finding files--find, xargs 
+ * firefox -> Safe and easy web browser from Mozilla 
+ * firefox-locale-en -> English language pack for Firefox 
+ * fish -> friendly interactive shell 
+ * fontconfig -> generic font configuration library - support binaries 
+ * fonts-cabin -> humanist sans serif font 
+ * fonts-comfortaa -> stylish, modern true type font 
+ * fonts-dejavu -> metapackage to pull in fonts-dejavu-core and fonts-dejavu-extra 
+ * fonts-dejavu-core -> Vera font family derivate with additional characters 
+ * fonts-dejavu-extra -> Vera font family derivate with additional characters (extra variants) 
+ * fonts-droid -> handheld device font with extensive style and language support 
+ * fonts-font-awesome -> iconic font designed for use with Twitter Bootstrap 
+ * fonts-freefont-otf -> Freefont Serif, Sans and Mono OpenType fonts 
+ * fonts-freefont-ttf -> Freefont Serif, Sans and Mono Truetype fonts 
+ * fonts-gfs-artemisia -> greek font (Times Greek-like) 
+ * fonts-gfs-baskerville -> ancient Greek font revival 
+ * fonts-gfs-complutum -> ancient Greek font revival from the University of Alcalá, Spain 
+ * fonts-gfs-didot -> greek font family (Didot revival) 
+ * fonts-gfs-neohellenic -> modern Greek font family with matching Latin 
+ * fonts-gfs-olga -> ancient Greek oblique font revival (companion to GFS Didot) 
+ * fonts-gfs-porson -> Greek font (Porson revival) 
+ * fonts-gfs-solomos -> ancient Greek oblique font 
+ * fonts-hosny-amiri -> Arabic Naskh style typographically oriented font 
+ * fonts-inconsolata -> monospace font for pretty code listings and for the terminal 
+ * fonts-ipaexfont-gothic -> Japanese OpenType font, IPAexFont (IPAexGothic) 
+ * fonts-ipaexfont-mincho -> Japanese OpenType font, IPAexFont (IPAexMincho) 
+ * fonts-ipafont-gothic -> Japanese OpenType font set, IPA Gothic font 
+ * fonts-ipafont-mincho -> Japanese OpenType font set, IPA Mincho font 
+ * fonts-junicode -> Unicode font for medievalists (Latin, IPA and Runic) 
+ * fonts-kacst -> KACST free TrueType Arabic fonts 
+ * fonts-kacst-one -> TrueType font designed for Arabic language 
+ * fonts-khmeros-core -> KhmerOS Unicode fonts for the Khmer language of Cambodia 
+ * fonts-lao -> TrueType font for Lao language 
+ * fonts-lato -> sans-serif typeface family font 
+ * fonts-liberation -> Fonts with the same metrics as Times, Arial and Courier 
+ * fonts-linuxlibertine -> Linux Libertine family of fonts 
+ * fonts-lklug-sinhala -> Unicode Sinhala font by Lanka Linux User Group 
+ * fonts-lmodern -> OpenType fonts based on Computer Modern 
+ * fonts-lobster -> bold condensed script with many ligatures and alternates 
+ * fonts-lobstertwo -> updated and improved family version of the Lobster font 
+ * fonts-mathjax -> JavaScript display engine for LaTeX and MathML (fonts) 
+ * fonts-nanum -> Nanum Korean fonts 
+ * fonts-oflb-asana-math -> extended smart Unicode Math font 
+ * fonts-opensymbol -> OpenSymbol TrueType font 
+ * fonts-sil-abyssinica -> smart Unicode font for Ethiopian and Erythrean scripts (Amharic et al.) 
+ * fonts-sil-gentium -> extended Unicode Latin font ("a typeface for the nations") 
+ * fonts-sil-gentium-basic -> smart Unicode font families (Basic and Book Basic) based on Gentium 
+ * fonts-sil-padauk -> smart Unicode font for languages in Myanmar 
+ * fonts-stix -> Scientific and Technical Information eXchange fonts 
+ * fonts-takao-pgothic -> Japanese TrueType font set, Takao P Gothic Fonts 
+ * fonts-texgyre -> OpenType fonts based on URW Fonts 
+ * fonts-thai-tlwg -> Thai fonts maintained by TLWG (meta package) 
+ * fonts-tibetan-machine -> font for Tibetan, Dzongkha and Ladakhi (OpenType Unicode) 
+ * fonts-tlwg-garuda -> Thai Garuda font 
+ * fonts-tlwg-kinnari -> Thai Kinnari font 
+ * fonts-tlwg-loma -> Thai Loma font 
+ * fonts-tlwg-mono -> Thai TlwgMono font 
+ * fonts-tlwg-norasi -> Thai Norasi font 
+ * fonts-tlwg-purisa -> Thai Purisa font 
+ * fonts-tlwg-sawasdee -> Thai Sawasdee font 
+ * fonts-tlwg-typewriter -> Thai TlwgTypewriter font 
+ * fonts-tlwg-typist -> Thai TlwgTypist font 
+ * fonts-tlwg-typo -> Thai TlwgTypo font 
+ * fonts-tlwg-umpush -> Thai Umpush font 
+ * fonts-tlwg-waree -> Thai Waree font 
+ * fonts-wqy-microhei -> Sans-serif style CJK font derived from Droid 
+ * foomatic-db-compressed-ppds -> OpenPrinting printer support - Compressed PPDs derived from the database 
+ * fortune-mod -> provides fortune cookies on demand 
+ * fortunes-husse -> Fortunes containing quotes from Husse. 
+ * fortunes-min -> Data files containing selected fortune cookies 
+ * fragmaster -> use of psfrag constructs with pdflatex 
+ * freerdp-x11 -> RDP client for Windows Terminal Services 
+ * friendly-recovery -> Make recovery more user-friendly 
+ * fslint -> Utility collection to find and fix common errors in file storage 
+ * ftp -> classical file transfer client 
+ * fuse -> Filesystem in Userspace 
+ * gaviotatb -> Gaviota chess endgame tablebases 
+ * gawk -> GNU awk, a pattern scanning and processing language 
+ * gcr -> GNOME crypto services (daemon and tools) 
+ * gdebi -> simple tool to install deb files - GNOME GUI 
+ * gdebi-core -> simple tool to install deb files 
+ * genisoimage -> Creates ISO-9660 CD-ROM filesystem images 
+ * geoclue -> Geographic information framework 
+ * geoclue-ubuntu-geoip -> Provide positioning for GeoClue via Ubuntu GeoIP services 
+ * geoip-database -> IP lookup command line tools that use the GeoIP library (country database) 
+ * gettext-base -> GNU Internationalization utilities for the base system 
+ * ghostscript -> interpreter for the PostScript language and for PDF 
+ * ghostscript-x -> interpreter for the PostScript language and for PDF - X11 support 
+ * gimp -> The GNU Image Manipulation Program 
+ * gimp-data -> Data files for GIMP 
+ * gimp-help-common -> Data files for the GIMP documentation 
+ * gimp-help-en -> Documentation for the GIMP (English) 
+ * gir1.2-atspi-2.0 -> Assistive Technology Service Provider (GObject introspection) 
+ * gir1.2-ebookcontacts-1.2 -> GObject introspection for the EBook Contacts library 
+ * gir1.2-gnomebluetooth-1.0 -> Introspection data for GnomeBluetooth 
+ * gir1.2-gnomekeyring-1.0 -> GNOME keyring services library - introspection data 
+ * gir1.2-goa-1.0 -> Introspection data for GNOME Online Accounts 
+ * gir1.2-gst-plugins-base-1.0 -> Description: GObject introspection data for the GStreamer Plugins Base library 
+ * gir1.2-gstreamer-1.0 -> Description: GObject introspection data for the GStreamer library 
+ * gir1.2-ibus-1.0 -> Intelligent Input Bus - introspection data 
+ * gir1.2-mate-panel -> GObject introspection data for MATE panel 
+ * gir1.2-xkl-1.0 -> X Keyboard Extension high-level API - introspection data 
+ * git -> fast, scalable, distributed revision control system 
+ * git-man -> fast, scalable, distributed revision control system (manual pages) 
+ * gksu -> graphical frontend to su 
+ * gnome-colors-common -> common icons for all GNOME-Colors icon themes 
+ * gnome-common -> common scripts and macros to develop with GNOME 
+ * gnome-desktop3-data -> Common files for GNOME desktop apps 
+ * gnome-disk-utility -> manage and configure disk drives and media 
+ * gnome-icon-theme -> GNOME Desktop icon theme (small subset) 
+ * gnome-icon-theme-full -> GNOME Desktop icon theme 
+ * gnome-icon-theme-symbolic -> GNOME desktop icon theme (symbolic icons) 
+ * gnome-keyring -> GNOME keyring services (daemon and tools) 
+ * gnome-settings-daemon-schemas -> gnome-settings-daemon schemas 
+ * gnome-video-effects -> GNOME Video Effects 
+ * gnome-web-photo -> Create snapshot images and print web pages from the command line 
+ * gnome-wise-icon-theme -> green variation of the GNOME-Colors icon theme 
+ * gnuchess -> Plays a game of chess, either against the user or against itself 
+ * gnuchess-book -> Opening book for gnuchess 
+ * gnupg -> GNU privacy guard - a free PGP replacement 
+ * google-earth-stable -> Explore, search and discover the planet 
+ * google-musicmanager-beta -> Google Music uploader. 
+ * gpgv -> GNU privacy guard - signature verification tool 
+ * graphviz -> rich set of graph drawing tools 
+ * grep -> GNU grep, egrep and fgrep 
+ * groff-base -> GNU troff text-formatting system (base system components) 
+ * growisofs -> DVD+-RW/R recorder 
+ * grub-common -> GRand Unified Bootloader (common files) 
+ * grub-efi-amd64 -> GRand Unified Bootloader, version 2 (EFI-AMD64 version) 
+ * grub-efi-amd64-bin -> GRand Unified Bootloader, version 2 (EFI-AMD64 binaries) 
+ * grub-efi-amd64-signed -> GRand Unified Bootloader, version 2 (EFI-AMD64 version, signed) 
+ * grub2-common -> GRand Unified Bootloader (common files for version 2) 
+ * grub2-theme-mint -> Grub2 theme for Linux Mint 
+ * gsfonts -> Fonts for the Ghostscript interpreter(s) 
+ * gstreamer0.10-gconf -> GStreamer plugin for getting the sink/source information from GConf 
+ * gstreamer0.10-nice -> ICE library (GStreamer 0.10 plugin) 
+ * gstreamer0.10-plugins-base-apps -> GStreamer helper programs from the "base" set 
+ * gstreamer0.10-pulseaudio -> GStreamer plugin for PulseAudio 
+ * gstreamer0.10-tools -> Tools for use with GStreamer 
+ * gstreamer1.0-nice -> ICE library (GStreamer plugin) 
+ * gstreamer1.0-plugins-base-apps -> GStreamer helper programs from the "base" set 
+ * gstreamer1.0-pulseaudio -> GStreamer plugin for PulseAudio 
+ * gstreamer1.0-tools -> Tools for use with GStreamer 
+ * gthumb -> image viewer and browser 
+ * gthumb-data -> image viewer and browser - arch-independent files 
+ * gtk-doc-tools -> GTK+ documentation tools 
+ * gtk2-engines -> theme engines for GTK+ 2.x 
+ * gtk2-engines:i386 -> theme engines for GTK+ 2.x 
+ * gtk2-engines-murrine -> cairo-based gtk+-2.0 theme engine 
+ * gtk2-engines-murrine:i386 -> cairo-based gtk+-2.0 theme engine 
+ * gtk2-engines-oxygen:i386 -> Oxygen widget theme for GTK+-based applications 
+ * gtk2-engines-pixbuf -> pixbuf-based theme for GTK+ 2.x 
+ * gtk2-engines-pixbuf:i386 -> pixbuf-based theme for GTK+ 2.x 
+ * guake -> Drop-down terminal for GNOME Desktop Environment 
+ * guile-1.8 -> GNU extension language and Scheme interpreter 
+ * guile-2.0-libs -> Core Guile libraries 
+ * gyp -> Cross-platform build script generator 
+ * gzip -> GNU compression utilities 
+ * handbrake -> versatile DVD ripper and video transcoder (GTK GUI) 
+ * hdparm -> tune hard disk parameters for high performance 
+ * heirloom-mailx -> feature-rich BSD mail(1) 
+ * hexchat -> IRC client for X based on X-Chat 2 
+ * hexchat-common -> Common files for HexChat 
+ * hicolor-icon-theme -> default fallback theme for FreeDesktop.org icon themes 
+ * hostapd -> user space IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator 
+ * hostname -> utility to set/show the host name or domain name 
+ * hplip -> HP Linux Printing and Imaging System (HPLIP) 
+ * hplip-data -> HP Linux Printing and Imaging - data files 
+ * htop -> interactive processes viewer 
+ * httrack -> Copy websites to your computer (Offline browser) 
+ * hunspell-en-us -> English_american dictionary for hunspell 
+ * hwdata -> hardware identification / configuration data 
+ * hyphen-en-us -> US English hyphenation patterns for LibreOffice/OpenOffice.org 
+ * ia32-libs -> Meta-package which depends on all common 32bit libs 
+ * ibus-gtk:i386 -> Intelligent Input Bus - GTK+2 support 
+ * icedtea-7-plugin -> web browser plugin based on OpenJDK and IcedTea to execute Java applets 
+ * icedtea-netx -> NetX - implementation of the Java Network Launching Protocol (JNLP) 
+ * icedtea-netx-common -> NetX - implementation of the Java Network Launching Protocol (JNLP) 
+ * icedtea-plugin -> web browser plugin to execute Java applets (dependency package) 
+ * ideviceinstaller -> Utility to manage installed applications on an iDevice 
+ * ifupdown -> high level tools to configure network interfaces 
+ * ifuse -> FUSE module for iPhone and iPod Touch devices 
+ * im-config -> Input method configuration framework 
+ * imagemagick -> image manipulation programs 
+ * imagemagick-common -> image manipulation programs -- infrastructure 
+ * indicator-application -> Application Indicators 
+ * info -> Standalone GNU Info documentation browser 
+ * init-system-helpers -> helper tools for all init systems 
+ * initramfs-tools -> tools for generating an initramfs 
+ * initramfs-tools-bin -> binaries used by initramfs-tools 
+ * initscripts -> scripts for initializing and shutting down the system 
+ * inputattach -> utility to connect serial-attached peripherals to the input subsystem 
+ * insserv -> boot sequence organizer using LSB init.d script dependency information 
+ * install-info -> Manage installed documentation in info format 
+ * intel-gpu-tools -> tools for debugging the Intel graphics driver 
+ * inxi -> full featured system information script 
+ * iproute -> transitional dummy package for iproute2 
+ * iproute2 -> networking and traffic control tools 
+ * iptables -> administration tools for packet filtering and NAT 
+ * iputils-arping -> Tool to send ICMP echo requests to an ARP address 
+ * iputils-ping -> Tools to test the reachability of network hosts 
+ * iputils-tracepath -> Tools to trace the network path to a remote host 
+ * irqbalance -> Daemon to balance interrupts for SMP systems 
+ * irssi -> terminal based IRC client 
+ * irssi-plugin-otr -> Off-the-Record Messaging Plugin for Irssi 
+ * isc-dhcp-client -> ISC DHCP client 
+ * isc-dhcp-common -> common files used by all the isc-dhcp* packages 
+ * iw -> tool for configuring Linux wireless devices 
+ * jack -> Rip and encode CDs with one command 
+ * jackd2 -> JACK Audio Connection Kit (server and example clients) 
+ * jade -> James Clark's DSSSL Engine 
+ * java-common -> Base of all Java packages 
+ * jdownloader-installer -> download manager for one-click hosting sites 
+ * jfsutils -> utilities for managing the JFS filesystem 
+ * kbd -> Linux console font and keytable utilities 
+ * kerneloops-daemon -> kernel oops tracker 
+ * keyboard-configuration -> system-wide keyboard preferences 
+ * keyutils -> Linux Key Management Utilities 
+ * kmod -> tools for managing Linux kernel modules 
+ * kpartx -> create device mappings for partitions 
+ * kpartx-boot -> Provides kpartx during boot 
+ * krb5-locales -> Internationalization support for MIT Kerberos 
+ * lacheck -> Simple syntax checker for LaTeX 
+ * language-pack-en -> translation updates for language English 
+ * language-pack-en-base -> translations for language English 
+ * language-pack-gnome-en -> GNOME translation updates for language English 
+ * language-pack-gnome-en-base -> GNOME translations for language English 
+ * laptop-detect -> attempt to detect a laptop 
+ * latex-beamer -> LaTeX class to produce presentations 
+ * latex-cjk-all -> installs all LaTeX CJK packages 
+ * latex-cjk-chinese -> Chinese module of LaTeX CJK 
+ * latex-cjk-chinese-arphic-bkai00mp -> AR PL KaitiM Big5 fonts for CJK 
+ * latex-cjk-chinese-arphic-bsmi00lp -> AR PL Mingti2L Big5 fonts for CJK 
+ * latex-cjk-chinese-arphic-gbsn00lp -> AR PL SungtiL GB fonts for CJK 
+ * latex-cjk-chinese-arphic-gkai00mp -> AR PL KaitiM GB fonts for CJK 
+ * latex-cjk-common -> LaTeX macro package for CJK (Chinese/Japanese/Korean) 
+ * latex-cjk-japanese -> Japanese module of LaTeX CJK 
+ * latex-cjk-japanese-wadalab -> type1 and tfm DNP Japanese fonts for latex-cjk 
+ * latex-cjk-korean -> Korean module of LaTeX CJK 
+ * latex-cjk-thai -> Thai module of LaTeX CJK 
+ * latex-sanskrit -> pre-processor and fonts to typeset Sanskrit in TeX 
+ * latex-xcolor -> Easy driver-independent TeX class for color 
+ * latexdiff -> utility to mark up significant differences between LaTeX files 
+ * latexmk -> Perl script for running LaTeX the correct number of times 
+ * lcdf-typetools -> Programs to manipulate OpenType, multiple-master, and Type 1 
+ * less -> pager program similar to more 
+ * libaacs0 -> free-and-libre implementation of AACS 
+ * libapache-pom-java -> Maven metadata for all Apache Software projects 
+ * libapache2-mod-php5 -> server-side, HTML-embedded scripting language (Apache 2 module) 
+ * libappindicator0.1-cil -> CLI bindings for libappindicator 
+ * libapt-inst1.5 -> deb package format runtime library 
+ * libapt-pkg-perl -> Perl interface to libapt-pkg 
+ * libapt-pkg4.12 -> package management runtime library 
+ * libarchive-extract-perl -> generic archive extracting module 
+ * libarchive-zip-perl -> Perl module for manipulation of ZIP archives 
+ * libaspectj-java -> aspect-oriented extension for Java - library 
+ * libatk-adaptor -> AT-SPI 2 toolkit bridge 
+ * libatk-wrapper-java -> ATK implementation for Java using JNI 
+ * libatk-wrapper-java-jni -> ATK implementation for Java using JNI (JNI bindings) 
+ * libatk1.0-data -> Common files for the ATK accessibility toolkit 
+ * libatspi2.0-0 -> Assistive Technology Service Provider Interface - shared library 
+ * libaudclient2 -> audacious D-Bus remote control library 
+ * libbcpkix-java -> Bouncy Castle Java API for PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF 
+ * libc6-dbg -> Embedded GNU C Library: detached debugging symbols 
+ * libcairo-perl -> Perl interface to the Cairo graphics library 
+ * libcap2-bin -> basic utility programs for using capabilities 
+ * libcdparanoia0 -> audio extraction tool for sampling CDs (library) 
+ * libcdparanoia0:i386 -> audio extraction tool for sampling CDs (library) 
+ * libcgmanager0 -> Central cgroup manager daemon (client library) 
+ * libcgmanager0:i386 -> Central cgroup manager daemon (client library) 
+ * libclass-accessor-perl -> Perl module that automatically generates accessors 
+ * libclass-data-inheritable-perl -> Perl module to create accessors to class data 
+ * libclone-perl -> module for recursively copying Perl datatypes 
+ * libcolorhug1 -> library to access the ColorHug colourimeter -- runtime 
+ * libcommon-sense-perl -> module that implements some sane defaults for Perl programs 
+ * libcommons-parent-java -> Maven metadata for Apache Commons project 
+ * libcrypt-openssl-bignum-perl -> Perl module to access OpenSSL multiprecision integer arithmetic libraries 
+ * libcrypt-openssl-rsa-perl -> module for RSA encryption using OpenSSL 
+ * libcrypt-passwdmd5-perl -> interoperable MD5-based crypt() for perl 
+ * libdbd-mysql-perl -> Perl5 database interface to the MySQL database 
+ * libdbi-perl -> Perl Database Interface (DBI) 
+ * libdbus-glib1.0-cil -> CLI implementation of D-Bus (GLib mainloop integration) 
+ * libdbus-glib2.0-cil -> CLI implementation of D-Bus (GLib mainloop integration) 
+ * libdbus1.0-cil -> CLI implementation of D-Bus 
+ * libdbus2.0-cil -> CLI implementation of D-Bus 
+ * libdecoration0 -> Compiz window decoration library 
+ * libdigest-hmac-perl -> module for creating standard message integrity checks 
+ * libdpkg-perl -> Dpkg perl modules 
+ * libemail-valid-perl -> Perl module for checking the validity of Internet email addresses 
+ * libencode-locale-perl -> utility to determine the locale encoding 
+ * libequinox-osgi-java -> Equinox OSGi framework 
+ * liberror-perl -> Perl module for error/exception handling in an OO-ish way 
+ * libexttextcat-data -> Language detection library - data files 
+ * libextutils-depends-perl -> Perl module for building extensions that depend on other extensions 
+ * libextutils-pkgconfig-perl -> Perl interface to the pkg-config utility 
+ * libfakeroot -> tool for simulating superuser privileges - shared libraries 
+ * libfelix-bundlerepository-java -> Felix OSGi bundle repository service 
+ * libfelix-gogo-command-java -> Apache Felix Gogo Command bundle 
+ * libfelix-gogo-runtime-java -> Apache Felix Gogo Runtime bundle 
+ * libfelix-gogo-shell-java -> Apache Felix Gogo Shell bundle 
+ * libfile-basedir-perl -> Perl module to use the freedesktop basedir specification 
+ * libfile-copy-recursive-perl -> Perl extension for recursively copying files and directories 
+ * libfile-desktopentry-perl -> Perl module to handle freedesktop .desktop files 
+ * libfile-listing-perl -> module to parse directory listings 
+ * libfile-mimeinfo-perl -> Perl module to determine file types 
+ * libfile-which-perl -> Perl module for searching paths for executable programs 
+ * libfontenc1 -> X11 font encoding library 
+ * libfreerdp-plugins-standard -> RDP client for Windows Terminal Services (plugins) 
+ * libgdata2.1-cil -> Google GData CLI client library 
+ * libgeronimo-jpa-2.0-spec-java -> Geronimo JSR-317 Java Persistence (JPA) 2.0 Spec API 
+ * libgeronimo-osgi-support-java -> Java libraries providing OSGi lookup support for Geronimo projects 
+ * libgkeyfile1.0-cil -> GObject-based wrapper library for GKeyFile -- CLI bindings 
+ * libglib-perl -> interface to the GLib and GObject libraries 
+ * libglib2.0-bin -> Programs for the GLib library 
+ * libglib2.0-data -> Common files for GLib library 
+ * libgmime2.6-cil -> CLI binding for the GMime library 
+ * libgnome-menu-3-0 -> GNOME implementation of the freedesktop menu specification 
+ * libgnome2-canvas-perl -> Perl interface to the GNOME canvas library 
+ * libgnome2-perl -> Perl interface to the GNOME libraries 
+ * libgnome2-vfs-perl -> Perl interface to the 2.x series of the GNOME VFS library 
+ * libgnome2-wnck-perl -> Perl interface to the Window Navigator Construction Kit 
+ * libgnomecanvas2-common -> powerful object-oriented display engine - common files 
+ * libgoo-canvas-perl -> Perl interface to the GooCanvas 
+ * libgraphics-magick-perl -> format-independent image processing - perl interface 
+ * libgtk-3-bin -> programs for the GTK+ graphical user interface library 
+ * libgtk-3-common -> common files for the GTK+ graphical user interface library 
+ * libgtk-sharp-beans-cil -> Supplementary CLI bindings for GTK 2.14+ 
+ * libgtk2-appindicator-perl -> Perl bindings for libappindicator 
+ * libgtk2-imageview-perl -> Perl bindings for the GtkImageView image viewer widget 
+ * libgtk2-perl -> Perl interface to the 2.x series of the Gimp Toolkit library 
+ * libgtk2-trayicon-perl -> Perl interface to fill the system tray 
+ * libgtk2-unique-perl -> module for single instance applications 
+ * libgtk2.0-common -> common files for the GTK+ graphical user interface library 
+ * libgtksourceview2.0-common -> common files for the GTK+ syntax highlighting widget 
+ * libgudev1.0-cil -> GObject-based wrapper library for libudev -- CLI bindings 
+ * libhsqldb1.8.0-java -> Java SQL database engine 
+ * libhtml-form-perl -> module that represents an HTML form element 
+ * libhtml-parser-perl -> collection of modules that parse HTML text documents 
+ * libhtml-tagset-perl -> Data tables pertaining to HTML 
+ * libhtml-tree-perl -> Perl module to represent and create HTML syntax trees 
+ * libhttp-cookies-perl -> HTTP cookie jars 
+ * libhttp-daemon-perl -> simple http server class 
+ * libhttp-date-perl -> module of date conversion routines 
+ * libhttp-message-perl -> perl interface to HTTP style messages 
+ * libhttp-negotiate-perl -> implementation of content negotiation 
+ * libhttp-server-simple-perl -> simple stand-alone HTTP server 
+ * libicu4j-4.4-java -> Library for Unicode support and internalisation 
+ * libimage-exiftool-perl -> library and program to read and write meta information in multimedia files 
+ * libimobiledevice-utils -> Library for communicating with iPhone and iPod Touch devices 
+ * libinline-perl -> module for producing simple Foreign Function Interfaces 
+ * libintl-perl -> Uniforum message translations system compatible i18n library 
+ * libio-html-perl -> open an HTML file with automatic charset detection 
+ * libio-pty-perl -> Perl module for pseudo tty IO 
+ * libio-socket-inet6-perl -> object interface for AF_INET6 domain sockets 
+ * libio-socket-ssl-perl -> Perl module implementing object oriented interface to SSL sockets 
+ * libio-string-perl -> Emulate IO::File interface for in-core strings 
+ * libipc-run-perl -> Perl module for running processes 
+ * libjetty8-java -> Java servlet engine and webserver -- core libraries 
+ * libjs-jquery -> JavaScript library for dynamic web applications 
+ * libjs-mathjax -> JavaScript display engine for LaTeX and MathML 
+ * libjs-node-uuid -> simple, fast generation of RFC4122 UUIDs - JavaScript library 
+ * libjs-sphinxdoc -> JavaScript support for Sphinx documentation 
+ * libjs-underscore -> JavaScript's functional programming helper library 
+ * libjson-perl -> module for manipulating JSON-formatted data 
+ * libjson-xs-perl -> module for manipulating JSON-formatted data (C/XS-accelerated) 
+ * libkeyutils1 -> Linux Key Management Utilities (library) 
+ * libkeyutils1:i386 -> Linux Key Management Utilities (library) 
+ * liblist-moreutils-perl -> Perl module with additional list functions not found in List::Util 
+ * liblocale-gettext-perl -> module using libc functions for internationalization in Perl 
+ * liblockfile-bin -> support binaries for and cli utilities based on liblockfile 
+ * liblog-message-simple-perl -> simplified interface to Log::Message 
+ * liblouis-data -> Braille translation library - data 
+ * liblucene2-java -> Full-text search engine library for Java(TM) 
+ * liblwp-mediatypes-perl -> module to guess media type for a file or a URL 
+ * liblwp-protocol-https-perl -> HTTPS driver for LWP::UserAgent 
+ * libmailtools-perl -> Manipulate email in perl programs 
+ * libmate-desktop-2-17 -> Library with common API for various MATE modules (library) 
+ * libminiupnpc8 -> UPnP IGD client lightweight library 
+ * libmodule-pluggable-perl -> module for giving  modules the ability to have plugins 
+ * libmono-cairo4.0-cil -> Mono Cairo library (for CLI 4.0) 
+ * libmono-corlib4.0-cil -> Mono core library (for CLI 4.0) 
+ * libmono-corlib4.5-cil -> Mono core library (for CLI 4.5) 
+ * libmono-data-tds4.0-cil -> Mono Data Library (for CLI 4.0) 
+ * libmono-posix4.0-cil -> Mono.Posix library (for CLI 4.0) 
+ * libmono-security4.0-cil -> Mono Security library (for CLI 4.0) 
+ * libmono-sharpzip4.84-cil -> Mono SharpZipLib library (for CLI 4.0) 
+ * libmono-system-configuration4.0-cil -> Mono System.Configuration library (for CLI 4.0) 
+ * libmono-system-core4.0-cil -> Mono System.Core library (for CLI 4.0) 
+ * libmono-system-data4.0-cil -> Mono System.Data library (for CLI 4.0) 
+ * libmono-system-drawing4.0-cil -> Mono System.Drawing library (for CLI 4.0) 
+ * libmono-system-enterpriseservices4.0-cil -> Mono System.EnterpriseServices library (for CLI 4.0) 
+ * libmono-system-numerics4.0-cil -> Mono System.Numerics library (for CLI 4.0) 
+ * libmono-system-runtime-serialization4.0-cil -> Mono System.Runtime.Serialization Library (for CLI 4.0) 
+ * libmono-system-security4.0-cil -> Mono System.Security library (for CLI 4.0) 
+ * libmono-system-transactions4.0-cil -> Mono System.Transactions library (for CLI 4.0) 
+ * libmono-system-xml-linq4.0-cil -> Mono System.Xml.Linq library (for CLI 4.0) 
+ * libmono-system-xml4.0-cil -> Mono System.Xml library (for CLI 4.0) 
+ * libmono-system4.0-cil -> Mono System libraries (for CLI 4.0) 
+ * libnatpmp1 -> portable and fully compliant implementation of NAT-PMP 
+ * libnet-dbus-perl -> Perl extension for the DBus bindings 
+ * libnet-dns-perl -> Perform DNS queries from a Perl script 
+ * libnet-domain-tld-perl -> list of currently available Top-level Domains (TLDs) 
+ * libnet-http-perl -> module providing low-level HTTP connection client 
+ * libnet-ip-perl -> Perl extension for manipulating IPv4/IPv6 addresses 
+ * libnet-oauth-perl -> implementation of the OAuth 1.0 protocol 
+ * libnet-smtp-ssl-perl -> Perl module providing SSL support to Net::SMTP 
+ * libnet-ssleay-perl -> Perl module for Secure Sockets Layer (SSL) 
+ * libnewtonsoft-json5.0-cil -> high-performance JSON framework for .NET 
+ * libnotify-bin -> sends desktop notifications to a notification daemon (Utilities) 
+ * libnss-mdns -> NSS module for Multicast DNS name resolution 
+ * libnss3-nssdb -> Network Security Security libraries - shared databases 
+ * libosgi-compendium-java -> Java OSGi API - Compendium module 
+ * libosgi-core-java -> Java OSGi API - Core module 
+ * libosgi-foundation-ee-java -> Java OSGi API - Foundation Execution Environment 
+ * libpam-ck-connector -> ConsoleKit PAM module 
+ * libpam-freerdp -> PAM Module to auth against an RDP server using FreeRDP 
+ * libpam-gnome-keyring -> PAM module to unlock the GNOME keyring upon login 
+ * libpam-modules -> Pluggable Authentication Modules for PAM 
+ * libpam-modules-bin -> Pluggable Authentication Modules for PAM - helper binaries 
+ * libpam-runtime -> Runtime support for the PAM library 
+ * libpam-systemd -> system and service manager - PAM module 
+ * libpango-perl -> Perl module to layout and render international text 
+ * libpaper-utils -> library for handling paper characteristics (utilities) 
+ * libparse-debianchangelog-perl -> parse Debian changelogs and output them in other formats 
+ * libparse-recdescent-perl -> Perl module to create and use recursive-descent parsers 
+ * libpath-class-perl -> module for cross-platform path specification manipulation 
+ * libplank-common -> Library to build an elegant, simple, clean dock (shared files) 
+ * libplank0 -> Library to build an elegant, simple, clean dock 
+ * libpod-latex-perl -> module to convert Pod data to formatted LaTeX 
+ * libproc-processtable-perl -> Perl library for accessing process table information 
+ * libproc-simple-perl -> Perl interface to launch and control background processes 
+ * libpulse-mainloop-glib0 -> PulseAudio client libraries (glib support) 
+ * libpulse-mainloop-glib0:i386 -> PulseAudio client libraries (glib support) 
+ * libpulsedsp -> PulseAudio OSS pre-load library 
+ * libpulsedsp:i386 -> PulseAudio OSS pre-load library 
+ * libpurple0 -> multi-protocol instant messaging library 
+ * libpython-stdlib -> interactive high-level object-oriented language (default python version) 
+ * libpython2.7-minimal -> Minimal subset of the Python language (version 2.7) 
+ * libpython2.7-stdlib -> Interactive high-level object-oriented language (standard library, version 2.7) 
+ * libpython3-stdlib -> interactive high-level object-oriented language (default python3 version) 
+ * libpython3.4-minimal -> Minimal subset of the Python language (version 3.4) 
+ * libpython3.4-stdlib -> Interactive high-level object-oriented language (standard library, version 3.4) 
+ * libreoffice-base-core -> office productivity suite -- shared library 
+ * libreoffice-base-drivers -> Database connectvity drivers for LibreOffice 
+ * libreoffice-calc -> office productivity suite -- spreadsheet 
+ * libreoffice-common -> office productivity suite -- arch-independent files 
+ * libreoffice-core -> office productivity suite -- arch-dependent files 
+ * libreoffice-draw -> office productivity suite -- drawing 
+ * libreoffice-emailmerge -> transitional package for LibreOffices email mail merge 
+ * libreoffice-gnome -> office productivity suite -- GNOME integration 
+ * libreoffice-gtk -> office productivity suite -- GTK+ integration 
+ * libreoffice-help-en-us -> office productivity suite -- English_american help 
+ * libreoffice-impress -> office productivity suite -- presentation 
+ * libreoffice-java-common -> office productivity suite -- arch-independent Java support files 
+ * libreoffice-math -> office productivity suite -- equation editor 
+ * libreoffice-ogltrans -> LibreOffice Impress extension for transitions using OpenGL 
+ * libreoffice-pdfimport -> PDF Import component for LibreOffice 
+ * libreoffice-presentation-minimizer -> transitional package for the LibreOffice presentation minimizer 
+ * libreoffice-sdbc-hsqldb -> HSQLDB SDBC driver for LibreOffice 
+ * libreoffice-writer -> office productivity suite -- word processor 
+ * libservlet2.5-java -> Servlet 2.5 and JSP 2.1 Java API classes 
+ * libservlet3.0-java -> Servlet 3.0 and JSP 2.2 Java API classes 
+ * libsocket6-perl -> Perl extensions for IPv6 
+ * libsort-naturally-perl -> Sort naturally - sort lexically except for numerical parts 
+ * libsox-fmt-alsa -> SoX alsa format I/O library 
+ * libsox-fmt-base -> Minimal set of SoX format libraries 
+ * libsox2 -> SoX library of audio effects and processing 
+ * libsub-name-perl -> module for assigning a new name to referenced sub 
+ * libswt-gtk-3-java -> Standard Widget Toolkit for GTK+ Java library 
+ * libtaglib2.1-cil -> CLI library for accessing audio and video files metadata 
+ * libterm-readkey-perl -> perl module for simple terminal control 
+ * libterm-ui-perl -> Term::ReadLine UI made easy 
+ * libtext-charwidth-perl -> get display widths of characters on the terminal 
+ * libtext-iconv-perl -> converts between character sets in Perl 
+ * libtext-levenshtein-perl -> implementation of the Levenshtein edit distance 
+ * libtext-soundex-perl -> implementation of the soundex algorithm 
+ * libtext-unidecode-perl -> Text::Unidecode -- US-ASCII transliterations of Unicode text 
+ * libtext-wrapi18n-perl -> internationalized substitute of Text::Wrap 
+ * libtime-duration-perl -> module for rounded or exact English expression of durations 
+ * libtimedate-perl -> collection of modules to manipulate date/time information 
+ * libtomcat7-java -> Servlet and JSP engine -- core libraries 
+ * libtotem0 -> Main library for the Totem media player 
+ * libunity-scopes-json-def-desktop -> binding to get places into the launcher - desktop def file 
+ * liburi-perl -> module to manipulate and access URI strings 
+ * libuuid-perl -> Perl extension for using UUID interfaces as defined in e2fsprogs 
+ * libvamp-hostsdk3 -> helper library for Vamp hosts written in C++ 
+ * libwildmidi-config -> software MIDI player configuration 
+ * libwww-mechanize-perl -> module to automate interaction with websites 
+ * libwww-perl -> simple and consistent interface to the world-wide web 
+ * libwww-robotrules-perl -> database of robots.txt-derived permissions 
+ * libx11-data -> X11 client-side library 
+ * libx11-protocol-perl -> Perl module for the X Window System Protocol, version 11 
+ * libxml-libxml-perl -> Perl interface to the libxml2 library 
+ * libxml-namespacesupport-perl -> Perl module for supporting simple generic namespaces 
+ * libxml-parser-perl -> Perl module for parsing XML files 
+ * libxml-sax-base-perl -> base class for SAX drivers and filters 
+ * libxml-sax-perl -> Perl module for using and building Perl SAX2 XML processors 
+ * libxml-simple-perl -> Perl module for reading and writing XML 
+ * libxml-twig-perl -> Perl module for processing huge XML documents in tree mode 
+ * libxp6 -> X Printing Extension (Xprint) client library 
+ * libxp6:i386 -> X Printing Extension (Xprint) client library 
+ * libxtables10 -> netfilter xtables library 
+ * libyaml-tiny-perl -> Perl module for reading and writing YAML files 
+ * libzeitgeist-2.0-0 -> library to access Zeitgeist - shared library 
+ * lilypond -> program for typesetting sheet music 
+ * lilypond-data -> LilyPond music typesetter (data files) 
+ * linux-firmware -> Firmware for Linux kernel drivers 
+ * linux-sound-base -> base package for ALSA and OSS sound systems 
+ * linuxdcpp -> Port of the Windows file-sharing program, DC++ 
+ * linuxmint-keyring -> GnuPG key of the Linux Mint repository 
+ * lmodern -> scalable PostScript and OpenType fonts based on Computer Modern 
+ * lockfile-progs -> Programs for locking and unlocking files and mailboxes 
+ * login -> system login tools 
+ * logkeys -> keylogger for GNU/Linux systems 
+ * logrotate -> Log rotation utility 
+ * lp-solve -> Solve (mixed integer) linear programming problems 
+ * lsb-base -> Linux Standard Base 4.1 init script functionality 
+ * lsb-core -> Linux Standard Base 4.1 core support package 
+ * lsb-invalid-mta -> Linux Standard Base sendmail dummy 
+ * lsb-release -> Linux Standard Base version reporting utility 
+ * lsb-security -> Linux Standard Base 4.1 Security package 
+ * lshw -> information about hardware configuration 
+ * lsof -> Utility to list open files 
+ * ltrace -> Tracks runtime library calls in dynamically linked programs 
+ * luatex -> next generation TeX engine 
+ * lupin-casper -> Add support for loop-mount installations to casper 
+ * lupin-support -> Support files for loop-mount installations 
+ * lvm2 -> Linux Logical Volume Manager 
+ * lynx -> Text-mode WWW Browser (transitional package) 
+ * lynx-cur -> Text-mode WWW Browser with NLS support (development version) 
+ * m-tx -> Simple music-from-text language for use with PMX/MusiXTeX 
+ * m4 -> a macro processing language 
+ * makedev -> creates device files in /dev 
+ * man-db -> on-line manual pager 
+ * manpages -> Manual pages about using a GNU/Linux system 
+ * manpages-dev -> Manual pages about using GNU/Linux for development 
+ * marco -> lightweight GTK+ window manager 
+ * marco-common -> launcher and docking facility for MATE (common files) 
+ * mate-applets -> Various applets for the MATE panel 
+ * mate-applets-common -> Various applets for the MATE panel (common files) 
+ * mate-calc -> MATE desktop calculator 
+ * mate-calc-common -> MATE desktop calculator (common files) 
+ * mate-control-center -> utilities to configure the MATE desktop 
+ * mate-desktop -> Library with common API for various MATE modules 
+ * mate-desktop-common -> Library with common API for various MATE modules (common files) 
+ * mate-dialogs -> Display graphical dialog boxes from shell scripts 
+ * mate-dialogs-common -> Display graphical dialog boxes from shell scripts (common files) 
+ * mate-icon-theme -> MATE Desktop icon theme 
+ * mate-indicator-applet -> MATE panel indicator applet 
+ * mate-media -> MATE media utilities (metapackage) 
+ * mate-media-common -> MATE media utilities (common files) 
+ * mate-media-pulse -> MATE media utilities (PulseAudio backend) 
+ * mate-netspeed -> Traffic monitor applet for MATE 
+ * mate-notification-daemon -> daemon to displays passive pop-up notifications 
+ * mate-panel -> launcher and docking facility for MATE 
+ * mate-panel-common -> launcher and docking facility for MATE (common files) 
+ * mate-polkit -> MATE authentication agent for PolicyKit-1 
+ * mate-polkit-common -> MATE authentication agent for PolicyKit-1 (common files) 
+ * mate-power-manager -> power management tool for the MATE desktop 
+ * mate-power-manager-common -> power management tool for the MATE desktop (common files) 
+ * mate-screensaver -> MATE screen saver and locker 
+ * mate-screensaver-common -> MATE screen saver and locker (common files) 
+ * mate-sensors-applet -> Display readings from hardware sensors in your MATE panel 
+ * mate-session-manager -> MATE Session Manager 
+ * mate-settings-daemon -> daemon handling the MATE session settings (metapackage) 
+ * mate-settings-daemon-common -> daemon handling the MATE session settings (common files) 
+ * mate-settings-daemon-pulse -> daemon handling the MATE session settings (PulseAudio version) 
+ * mate-system-monitor -> Process viewer and system resource monitor for MATE 
+ * mate-system-monitor-common -> Process viewer and system resource monitor for MATE (common files) 
+ * mate-system-tools -> Cross-platform configuration utilities for MATE 
+ * mate-system-tools-common -> Cross-platform configuration utilities for MATE (common files) 
+ * mate-terminal -> MATE terminal emulator application 
+ * mate-terminal-common -> MATE terminal emulator application (common files) 
+ * mate-user-guide -> User documentation for MATE Desktop 
+ * mate-utils -> MATE desktop utilities 
+ * mate-utils-common -> MATE desktop utilities (common files) 
+ * mawk -> a pattern scanning and text processing language 
+ * mdm -> MDM Display Manager 
+ * media-player-info -> Media player identification files 
+ * megasync -> Easy automated syncing between your computers and your MEGA cloud drive 
+ * melt -> command line media player and video editor 
+ * memtest86+ -> thorough real-mode memory tester 
+ * menu-xdg -> freedesktop.org menu compliant window manager scripts 
+ * mesa-utils -> Miscellaneous Mesa GL utilities 
+ * metacity -> lightweight GTK+ window manager 
+ * metacity-common -> shared files for the Metacity window manager 
+ * mime-support -> MIME files 'mime.types' & 'mailcap', and support programs 
+ * mint-artwork-common -> Common artwork for Linux Mint editions 
+ * mint-artwork-gnome -> Default artwork for Linux Mint 
+ * mint-artwork-mate -> Default artwork for MATE 
+ * mint-backgrounds-qiana -> The desktop backgrounds for Linux Mint 17 Qiana 
+ * mint-common -> Common scripts and resources for Linux Mint 
+ * mint-flashplugin-steam -> Flash plugin for Steam 
+ * mint-info-mate -> Necessary information about the Linux Mint release and edition. 
+ * mint-mdm-themes -> Linux Mint MDM Themes 
+ * mint-meta-core -> Core Linux Mint packages 
+ * mint-meta-mate -> Set of packages required to run MATE 
+ * mint-mirrors -> Linux Mint Repository mirrors 
+ * mint-search-addon -> Enhances the results given by Google 
+ * mint-stylish-addon -> Stylish add-on for Firefox 
+ * mint-themes -> Mint themes 
+ * mint-themes-gtk3 -> Mint themes for GTK3 
+ * mint-translations -> Translation files for Linux Mint 
+ * mint-x-icons -> Mint-X Icon themes 
+ * mintbackup -> Home Directory Backup Tool 
+ * mintdesktop -> Desktop configuration tool 
+ * mintdrivers -> Driver Manager 
+ * mintinstall -> Software Manager 
+ * mintinstall-icons -> Icons for the Software Manager 
+ * mintlocale -> Language selection tool 
+ * mintmenu -> Advanced MATE menu 
+ * mintnanny -> Domain blocker for Linux Mint 
+ * mintsources -> Software Sources configuration tool 
+ * mintstick -> Tool to write .img and .iso files to USB sticks. Can also format them. 
+ * mintsystem -> Linux Mint System Base Package 
+ * mintupdate -> Update Manager 
+ * mintupload -> Uploads files on the Internet 
+ * mintwelcome -> Welcome screen for Linux Mint 
+ * mintwifi -> Collection of drivers for you to configure your wireless card through ndiswrapper without connecting to the Internet. 
+ * mlocate -> quickly find files on the filesystem based on their name 
+ * mobile-broadband-provider-info -> database of mobile broadband service providers 
+ * modemmanager -> D-Bus service for managing modems 
+ * module-init-tools -> transitional dummy package (module-init-tools to kmod) 
+ * mono-4.0-gac -> Mono GAC tool (for CLI 4.0) 
+ * mono-runtime -> Mono runtime - default version 
+ * mono-runtime-common -> Mono runtime - common files 
+ * mono-runtime-sgen -> Mono runtime - SGen 
+ * mount -> Tools for mounting and manipulating filesystems 
+ * mountall -> filesystem mounting tool 
+ * mousetweaks -> mouse accessibility enhancements for the GNOME desktop 
+ * mozo -> easy MATE menu editing tool 
+ * mscompress -> Microsoft "compress.exe/expand.exe" compatible (de)compressor 
+ * mtools -> Tools for manipulating MSDOS files 
+ * mtr-tiny -> Full screen ncurses traceroute tool 
+ * musescore -> Full featured WYSIWYG score editor 
+ * musescore-common -> Full featured WYSIWYG score editor (common files) 
+ * musescore-soundfont-gm -> Small GM SoundFont for MuseScore (TimGM6mb) 
+ * musixtex -> Typeset music scores with TeX 
+ * myspell-en-au -> English_australian dictionary for myspell 
+ * myspell-en-gb -> English_british dictionary for myspell 
+ * myspell-en-za -> English_southafrican dictionary for myspell 
+ * mysql-client-5.5 -> MySQL database client binaries 
+ * mysql-client-core-5.5 -> MySQL database core client binaries 
+ * mysql-common -> MySQL database common files, e.g. /etc/mysql/my.cnf 
+ * mysql-server -> MySQL database server (metapackage depending on the latest version) 
+ * mysql-server-5.5 -> MySQL database server binaries and system database setup 
+ * mysql-server-core-5.5 -> MySQL database server binaries 
+ * mythes-en-us -> English Thesaurus for LibreOffice 
+ * nano -> small, friendly text editor inspired by Pico 
+ * nautilus-megasync -> Easy automated syncing between your computers and your MEGA cloud drive 
+ * ncurses-base -> basic terminal type definitions 
+ * ncurses-bin -> terminal-related programs and man pages 
+ * ncurses-term -> additional terminal type definitions 
+ * ndiswrapper-common -> Common scripts required to use the utilities for ndiswrapper 
+ * ndiswrapper-utils-1.9 -> Userspace utilities for the ndiswrapper Linux kernel module 
+ * net-tools -> The NET-3 networking toolkit 
+ * netbase -> Basic TCP/IP networking system 
+ * netcat-openbsd -> TCP/IP swiss army knife 
+ * network-manager -> network management framework (daemon and userspace tools) 
+ * network-manager-gnome -> network management framework (GNOME frontend) 
+ * network-manager-pptp -> network management framework (PPTP plugin core) 
+ * network-manager-pptp-gnome -> network management framework (PPTP plugin GNOME GUI) 
+ * node-abbrev -> Like ruby abbrev module, but for Node.js 
+ * node-ansi -> Advanced ANSI formatting tool for Node.js 
+ * node-archy -> Pretty-print nested hierarchies module for Node.js 
+ * node-async -> higher-order functions and common patterns for asynchronous Javascript 
+ * node-block-stream -> Stream of fixed-size blocks, with zero-padding when necessary 
+ * node-combined-stream -> Append streams one after another - module for Node.js 
+ * node-cookie-jar -> Cookie handling for HTTP clients - module for Node.js 
+ * node-delayed-stream -> Buffer stream events for later handling - module for Node.js 
+ * node-forever-agent -> HTTP agent supporting keep-alive requests - module for Node.js 
+ * node-form-data -> Create multipart/form-data streams module for Node.js 
+ * node-fstream -> Advanced filesystem streaming tools for Node.js 
+ * node-fstream-ignore -> Directory reader configurable by .ignore module for Node.js 
+ * node-github-url-from-git -> Convert github git or gist url to an http url - Node.js module 
+ * node-graceful-fs -> drop-in replacement improving the Node.js fs module 
+ * node-gyp -> Native addon build tool for Node.js 
+ * node-inherits -> Exposes inherits function from Node.js environment 
+ * node-ini -> ini format parser and serializer for Node.js 
+ * node-json-stringify-safe -> JSON.stringify with circular references module for Node.js 
+ * node-lockfile -> Asynchronous file lock module for Node.js 
+ * node-lru-cache -> least-recently-used cache object for Node.js 
+ * node-mime -> library for mime-type mapping for Node.js 
+ * node-minimatch -> Convert glob expressions into RegExp objects for Node.js 
+ * node-mkdirp -> Node.js module to recursively create directories 
+ * node-mute-stream -> Pass-through stream that can be muted module for Node.js 
+ * node-node-uuid -> simple, fast generation of RFC4122 UUIDs - Node module 
+ * node-nopt -> Command-line option parser for Node.js 
+ * node-normalize-package-data -> Normalizes package metadata - Node.js module 
+ * node-npmlog -> Logger with custom levels and colored output for Node.js 
+ * node-once -> Run a function only once with this module for Node.js 
+ * node-osenv -> Environment settings lookup module for Node.js 
+ * node-qs -> querystring parser library for Node.js 
+ * node-read -> Read user input from stdin module for Node.js 
+ * node-read-package-json -> Read package.json for npm module for Node.js 
+ * node-request -> simplified HTTP request client module for Node.js 
+ * node-retry -> Retry strategies for failed operations module for Node.js 
+ * node-rimraf -> Deep deletion (like rm -rf) module for Node.js 
+ * node-semver -> Semantic Versioning for Node.js 
+ * node-sha -> Check and get file or stream hashes - module for Node.js 
+ * node-sigmund -> Quick and dirty signatures for Objects module for Node.js 
+ * node-slide -> Simple chain and asyncMap flow control module for Node.js 
+ * node-tar -> read and write portable tar archives module for Node.js 
+ * node-tunnel-agent -> HTTP proxy tunneling agent module for Node.js 
+ * node-which -> Cross-platform 'which' module for Node.js 
+ * nodejs -> evented I/O for V8 javascript 
+ * npm -> package manager for Node.js 
+ * ntfs-3g -> read/write NTFS driver for FUSE 
+ * ntpdate -> client for setting system time from NTP servers 
+ * nux-tools -> Visual rendering toolkit for real-time applications - tools 
+ * obex-data-server -> D-Bus service for OBEX client and server side functionality 
+ * obexd-client -> D-Bus OBEX client 
+ * oneconf-common -> synchronize your configuration data over the network 
+ * openjdk-7-jdk -> OpenJDK Development Kit (JDK) 
+ * openjdk-7-jre -> OpenJDK Java runtime, using Hotspot JIT 
+ * openjdk-7-jre-headless -> OpenJDK Java runtime, using Hotspot JIT (headless) 
+ * openjdk-7-jre-lib -> OpenJDK Java runtime (architecture independent libraries) 
+ * openoffice.org-hyphenation -> Hyphenation patterns for OpenOffice.org 
+ * openprinting-ppds -> OpenPrinting printer support - PostScript PPD files 
+ * openshot -> Create and edit videos and movies 
+ * openssh-client -> secure shell (SSH) client, for secure access to remote machines 
+ * openssl -> Secure Sockets Layer toolkit - cryptographic utility 
+ * os-prober -> utility to detect other OSes on a set of drives 
+ * p11-kit -> p11-glue utilities 
+ * p11-kit-modules -> p11-glue proxy and trust modules 
+ * p7zip -> 7z file archiver with high compression ratio 
+ * p7zip-full -> 7z and 7za file archivers with high compression ratio 
+ * pandoc -> general markup converter 
+ * pandoc-data -> general markup converter - data files 
+ * parted -> disk partition manipulator 
+ * passwd -> change and administer password and group data 
+ * patch -> Apply a diff file to an original 
+ * patchutils -> Utilities to work with patches 
+ * pax -> Portable Archive Interchange (cpio, pax, tar) 
+ * pciutils -> Linux PCI Utilities 
+ * pcmciautils -> PCMCIA utilities for Linux 2.6 
+ * pdftk -> tool for manipulating PDF documents 
+ * perl -> Larry Wall's Practical Extraction and Report Language 
+ * perl-base -> minimal Perl system 
+ * perl-modules -> Core Perl modules 
+ * perlmagick -> Perl interface to the ImageMagick graphics routines 
+ * pfb2t1c2pfb -> convert pfb into more compressible format and back 
+ * pgf -> TeX Portable Graphic Format 
+ * php5 -> server-side, HTML-embedded scripting language (metapackage) 
+ * php5-common -> Common files for packages built from the php5 source 
+ * php5-gd -> GD module for php5 
+ * php5-json -> JSON module for php5 
+ * php5-mysql -> MySQL module for php5 
+ * plank -> Elegant, simple, clean dock 
+ * pluma -> official text editor of the MATE desktop environment 
+ * pluma-common -> official text editor of the MATE desktop environment (common files) 
+ * plymouth -> graphical boot animation and logger - main package 
+ * plymouth-label -> graphical boot animation and logger - label control 
+ * plymouth-theme-ubuntu-text -> graphical boot animation and logger - ubuntu-logo theme 
+ * pm-utils -> utilities and scripts for power management 
+ * pmx -> Preprocessor for MusiXTeX 
+ * policykit-1 -> framework for managing administrative policies and privileges 
+ * policykit-1-gnome -> GNOME authentication agent for PolicyKit-1 
+ * policykit-desktop-privileges -> run common desktop actions without password 
+ * poppler-data -> encoding data for the poppler PDF rendering library 
+ * poppler-utils -> PDF utilities (based on Poppler) 
+ * powermgmt-base -> Common utils and configs for power management 
+ * ppp -> Point-to-Point Protocol (PPP) - daemon 
+ * pppconfig -> A text menu based utility for configuring ppp 
+ * pppoe -> PPP over Ethernet driver 
+ * pppoeconf -> configures PPPoE/ADSL connections 
+ * pptp-linux -> Point-to-Point Tunneling Protocol (PPTP) Client 
+ * preview-latex-style -> extraction of elements from LaTeX documents as graphics 
+ * printer-driver-c2esp -> printer driver for Kodak ESP AiO color inkjet Series 
+ * printer-driver-foo2zjs -> printer driver for ZjStream-based printers 
+ * printer-driver-foo2zjs-common -> printer driver for ZjStream-based printers - common files 
+ * printer-driver-gutenprint -> printer drivers for CUPS 
+ * printer-driver-hpcups -> HP Linux Printing and Imaging - CUPS Raster driver (hpcups) 
+ * printer-driver-min12xxw -> printer driver for KonicaMinolta PagePro 1[234]xxW 
+ * printer-driver-pnm2ppa -> printer driver for HP-GDI printers 
+ * printer-driver-postscript-hp -> HP Printers PostScript Descriptions 
+ * printer-driver-ptouch -> printer driver Brother P-touch label printers 
+ * printer-driver-pxljr -> printer driver for HP Color LaserJet 35xx/36xx 
+ * printer-driver-sag-gdi -> printer driver for Ricoh Aficio SP 1000s/SP 1100s 
+ * printer-driver-splix -> Driver for Samsung and Xerox SPL2 and SPLc laser printers 
+ * procps -> /proc file system utilities 
+ * prosper -> LaTeX class for writing transparencies 
+ * psmisc -> utilities that use the proc file system 
+ * pstoedit -> PostScript and PDF files to editable vector graphics converter 
+ * psutils -> PostScript document handling utilities 
+ * pulseaudio -> PulseAudio sound server 
+ * pulseaudio-module-bluetooth -> Bluetooth module for PulseAudio sound server 
+ * pulseaudio-module-x11 -> X11 module for PulseAudio sound server 
+ * pulseaudio-utils -> Command line tools for the PulseAudio sound server 
+ * purifyeps -> creates EPS files usable in TeX and pdfTeX 
+ * pychess -> chess graphical user interface for several chess engines 
+ * python -> interactive high-level object-oriented language (default version) 
+ * python-appindicator -> Python bindings for libappindicator 
+ * python-apsw -> another Python SQLite 3 wrapper 
+ * python-apt -> Python interface to libapt-pkg 
+ * python-apt-common -> Python interface to libapt-pkg (locales) 
+ * python-aptdaemon -> Python 2 module for the server and client of aptdaemon 
+ * python-aptdaemon.gtk3widgets -> Python 2 GTK+ 3 widgets to run an aptdaemon client 
+ * python-beautifulsoup -> error-tolerant HTML parser for Python 
+ * python-cairo -> Python bindings for the Cairo vector graphics library 
+ * python-cddb -> Python interface to CD-IDs and FreeDB 
+ * python-central -> register and build utility for Python packages 
+ * python-chardet -> universal character encoding detector 
+ * python-cherrypy3 -> Python web development framework - version 3 
+ * python-commandnotfound -> Python 2 bindings for command-not-found. 
+ * python-compizconfig -> Compizconfig bindings for python 
+ * python-configglue -> Glues together optparse.OptionParser and ConfigParser.ConfigParser 
+ * python-configobj -> simple but powerful config file reader and writer for Python 
+ * python-crypto -> cryptographic algorithms and protocols for Python 
+ * python-cssselect -> cssselect parses CSS3 Selectors and translates them to XPath 1.0 
+ * python-cssutils -> CSS Cascading Style Sheets parser and builder 
+ * python-cups -> Python bindings for CUPS 
+ * python-cupshelpers -> Python modules for printer configuration with CUPS 
+ * python-dateutil -> powerful extensions to the standard datetime module 
+ * python-dbus -> simple interprocess messaging system (Python interface) 
+ * python-dbus-dev -> main loop integration development files for python-dbus 
+ * python-debtagshw -> Match debtags hardware:: tags against the actual hardware 
+ * python-defer -> Small framework for asynchronous programming (Python 2) 
+ * python-dirspec -> Python User Folders Specification Library 
+ * python-dnspython -> DNS toolkit for Python 
+ * python-eyed3 -> Python module for id3-tags manipulation 
+ * python-feedparser -> Universal Feed Parser for Python 
+ * python-gconf -> Python bindings for the GConf configuration database system 
+ * python-gdbm -> GNU dbm database support for Python 
+ * python-gi -> Python 2.x bindings for gobject-introspection libraries 
+ * python-gi-cairo -> Python Cairo bindings for the GObject library 
+ * python-glade2 -> GTK+ bindings: Glade support 
+ * python-gnome2 -> Python bindings for the GNOME desktop environment 
+ * python-gnomekeyring -> Python bindings for the GNOME keyring library 
+ * python-gobject -> Python 2.x bindings for GObject - transitional package 
+ * python-gst0.10 -> generic media-playing framework (Python bindings) 
+ * python-gtk2 -> Python bindings for the GTK+ widget set 
+ * python-gtksourceview2 -> Python bindings for the GtkSourceView widget 
+ * python-imaging -> Python Imaging Library compatibility layer 
+ * python-imaging-compat -> Dummy transitional package 
+ * python-ldb -> Python bindings for LDB 
+ * python-libxml2 -> Python bindings for the GNOME XML library 
+ * python-lockfile -> file locking library for Python 
+ * python-lxml -> pythonic binding for the libxml2 and libxslt libraries 
+ * python-mako -> fast and lightweight templating for the Python platform 
+ * python-markdown -> text-to-HTML conversion library/tool (implemented in Python 2) 
+ * python-markupsafe -> HTML/XHTML/XML string library for Python 
+ * python-mate-menu -> implementation of the freedesktop menu specification for MATE (python bindings) 
+ * python-mechanize -> stateful programmatic web browsing 
+ * python-minimal -> minimal subset of the Python language (default version) 
+ * python-mlt -> multimedia framework (python bindings) 
+ * python-netifaces -> portable network interface information for Python 
+ * python-notify -> Python bindings for libnotify 
+ * python-ntdb -> Python bindings for NTDB 
+ * python-oauthlib -> generic, spec-compliant implementation of OAuth for Python 
+ * python-ogg -> Python interface to the Ogg library 
+ * python-oneconf -> synchronize your configuration data over the network (Python 2) 
+ * python-openssl -> Python 2 wrapper around the OpenSSL library 
+ * python-pam -> Python interface to the PAM library 
+ * python-paramiko -> Make ssh v2 connections with Python (Python 2) 
+ * python-parted -> Python interface for libparted 
+ * python-pexpect -> Python module for automating interactive applications 
+ * python-pil -> Python Imaging Library (Pillow fork) 
+ * python-piston-mini-client -> library for writing clients for Django's Piston REST APIs 
+ * python-pkg-resources -> Package Discovery and Resource Access using pkg_resources 
+ * python-protobuf -> Python bindings for protocol buffers 
+ * python-pycurl -> Python bindings to libcurl 
+ * python-pygoocanvas -> GooCanvas Python bindings 
+ * python-pyinotify -> simple Linux inotify Python bindings 
+ * python-pyorbit -> A Python language binding for the ORBit2 CORBA implementation 
+ * python-pyparsing -> Python parsing module 
+ * python-pyvorbis -> Python interface to the Ogg Vorbis library 
+ * python-qt4 -> Python bindings for Qt4 
+ * python-qt4-dbus -> D-Bus Support for PyQt4 
+ * python-regex -> alternative regular expression module 
+ * python-renderpm -> python low level render interface 
+ * python-reportlab -> ReportLab library to create PDF documents using Python 
+ * python-reportlab-accel -> C coded extension accelerator for the ReportLab Toolkit 
+ * python-repoze.lru -> tiny LRU cache implementation and decorator 
+ * python-requests -> elegant and simple HTTP library for Python, built for human beings 
+ * python-routes -> Routing Recognition and Generation Tools 
+ * python-rsvg -> Python bindings for the RSVG library 
+ * python-samba -> Python bindings for Samba 
+ * python-serial -> pyserial - module encapsulating access for the serial port 
+ * python-sexy -> python language bindings for libsexy 
+ * python-sip -> Python/C++ bindings generator runtime library 
+ * python-six -> Python 2 and 3 compatibility library (Python 2 interface) 
+ * python-smbc -> Python bindings for Samba clients (libsmbclient) 
+ * python-software-properties -> manage the repositories that you install software from 
+ * python-support -> automated rebuilding support for Python modules 
+ * python-talloc -> hierarchical pool based memory allocator - Python bindings 
+ * python-tdb -> Python bindings for TDB 
+ * python-twisted-bin -> Event-based framework for internet applications 
+ * python-twisted-core -> Event-based framework for internet applications 
+ * python-twisted-names -> DNS protocol implementation with client and server 
+ * python-twisted-web -> HTTP protocol implementation together with clients and servers 
+ * python-urllib3 -> HTTP library with thread-safe connection pooling for Python 
+ * python-utidylib -> Python wrapper for TidyLib 
+ * python-vte -> Python bindings for the VTE widget set 
+ * python-webkit -> WebKit/Gtk Python bindings 
+ * python-wxgtk2.8 -> wxWidgets Cross-platform C++ GUI toolkit (wxPython binding) 
+ * python-wxversion -> wxWidgets Cross-platform C++ GUI toolkit (wxPython version selector) 
+ * python-xapian -> Xapian search engine interface for Python 
+ * python-xdg -> Python 2 library to access freedesktop.org standards 
+ * python-xlib -> Interface for Python to the X11 Protocol 
+ * python-zope.interface -> Interfaces for Python 
+ * python2.7 -> Interactive high-level object-oriented language (version 2.7) 
+ * python2.7-minimal -> Minimal subset of the Python language (version 2.7) 
+ * python3 -> interactive high-level object-oriented language (default python3 version) 
+ * python3-apt -> Python 3 interface to libapt-pkg 
+ * python3-aptdaemon -> Python 3 module for the server and client of aptdaemon 
+ * python3-aptdaemon.gtk3widgets -> Python 3 GTK+ 3 widgets to run an aptdaemon client 
+ * python3-aptdaemon.pkcompat -> PackageKit compatibilty for AptDaemon 
+ * python3-brlapi -> Braille display access via BRLTTY - Python3 bindings 
+ * python3-cairo -> Python 3 bindings for the Cairo vector graphics library 
+ * python3-chardet -> universal encoding detector 
+ * python3-commandnotfound -> Python 3 bindings for command-not-found. 
+ * python3-crypto -> cryptographic algorithms and protocols for Python 3 
+ * python3-dbus -> simple interprocess messaging system (Python 3 interface) 
+ * python3-debian -> Python 3 modules to work with Debian-related data formats 
+ * python3-defer -> Small framework for asynchronous programming (Python 3) 
+ * python3-dirspec -> Python User Folders Specification Library 
+ * python3-enchant -> spellchecking library for Python 3 
+ * python3-gdbm -> GNU dbm database support for Python 3.x 
+ * python3-gi -> Python 3 bindings for gobject-introspection libraries 
+ * python3-gi-cairo -> Python 3 Cairo bindings for the GObject library 
+ * python3-httplib2 -> comprehensive HTTP client library written for Python3 
+ * python3-icu -> Python 3 extension wrapping the ICU C++ API 
+ * python3-levenshtein -> extension for computing string similarities and edit distances (Python 3) 
+ * python3-louis -> Python bindings for liblouis 
+ * python3-lxml -> pythonic binding for the libxml2 and libxslt libraries 
+ * python3-minimal -> minimal subset of the Python language (default python3 version) 
+ * python3-oauthlib -> generic, spec-compliant implementation of OAuth for Python3 
+ * python3-oneconf -> synchronize your configuration data over the network (Python 3) 
+ * python3-piston-mini-client -> library for writing clients for Django's Piston REST APIs 
+ * python3-pkg-resources -> Package Discovery and Resource Access using pkg_resources 
+ * python3-pyatspi -> Assistive Technology Service Provider Interface - Python3 bindings 
+ * python3-pycurl -> Python 3 bindings to libcurl 
+ * python3-pyicu -> dummy transitional package for PyICU Python 3 extension 
+ * python3-regex -> alternative regular expression module (Python 3) 
+ * python3-six -> Python 2 and 3 compatibility library (Python 3 interface) 
+ * python3-software-properties -> manage the repositories that you install software from 
+ * python3-speechd -> Python interface to Speech Dispatcher 
+ * python3-virtkey -> Library to emulate keyboard keypresses. 
+ * python3-xdg -> Python 3 library to access freedesktop.org standards 
+ * python3-xkit -> library for the manipulation of xorg.conf files (Python 3) 
+ * python3.4 -> Interactive high-level object-oriented language (version 3.4) 
+ * python3.4-minimal -> Minimal subset of the Python language (version 3.4) 
+ * qbittorrent -> bittorrent client based on libtorrent-rasterbar with a Qt4 GUI 
+ * qpdf -> tools for and transforming and inspecting PDF files 
+ * qt-at-spi -> at-spi accessibility plugin for Qt 
+ * qtox -> no description given 
+ * radeontool -> utility to control ATI Radeon backlight functions on laptops 
+ * rarian-compat -> Documentation meta-data library (compatibility tools) 
+ * rawtherapee -> raw image converter and digital photo processor 
+ * rawtherapee-data -> raw image converter and digital photo processor (data files) 
+ * rdate -> sets the system's date from a remote host 
+ * readline-common -> GNU readline and history libraries, common files 
+ * recordmydesktop -> Captures audio-video data of a Linux desktop session 
+ * reiserfsprogs -> User-level tools for ReiserFS filesystems 
+ * rescuetime -> RescueTime for Linux 
+ * resolvconf -> name server information handler 
+ * rfkill -> tool for enabling and disabling wireless devices 
+ * rpm -> package manager for RPM 
+ * rpm-common -> common files for RPM 
+ * rpm2cpio -> tool to convert RPM package to CPIO archive 
+ * rsync -> fast, versatile, remote (and local) file-copying tool 
+ * rsyslog -> reliable system and kernel logging daemon 
+ * rtkit -> Realtime Policy and Watchdog Daemon 
+ * ruby -> Interpreter of object-oriented scripting language Ruby (default version) 
+ * ruby1.9.1 -> Interpreter of object-oriented scripting language Ruby 
+ * ruby1.9.1-dev -> Header files for compiling extension modules for the Ruby 1.9.1 
+ * rygel -> GNOME UPnP/DLNA services 
+ * samba -> SMB/CIFS file, print, and login server for Unix 
+ * samba-common -> common files used by both the Samba server and client 
+ * samba-common-bin -> Samba common files used by both the server and the client 
+ * sane-utils -> API library for scanners -- utilities 
+ * sat4j -> Efficient library of SAT solvers in Java 
+ * screen -> terminal multiplexer with VT100/ANSI terminal emulation 
+ * scrollkeeper -> Transitional package for scrollkeeper 
+ * sed -> The GNU sed stream editor 
+ * sensible-utils -> Utilities for sensible alternative selection 
+ * session-migration -> Tool to migrate in user session settings 
+ * sessioninstaller -> APT based installer using PackageKit's session DBus API 
+ * sgml-base -> SGML infrastructure and SGML catalog file support 
+ * sgml-data -> common SGML and XML data 
+ * shared-mime-info -> FreeDesktop.org shared MIME database and spec 
+ * shim -> boot loader to chain-load signed boot loaders under Secure Boot 
+ * shim-signed -> Secure Boot chain-loading bootloader (Microsoft-signed binary) 
+ * shutter -> Feature-rich screenshot application 
+ * signon-keyring-extension -> GNOME keyring extension for signond 
+ * signon-ui -> Single Sign-on UI 
+ * signond -> Single Sign On framework 
+ * simple-scan -> Simple Scanning Utility 
+ * skype -> client for Skype VOIP and instant messaging service 
+ * skype-bin:i386 -> client for Skype VOIP and instant messaging service - binary files 
+ * smbclient -> command-line SMB/CIFS clients for Unix 
+ * sni-qt -> indicator support for Qt 
+ * software-properties-common -> manage the repositories that you install software from (common) 
+ * sound-theme-freedesktop -> freedesktop.org sound theme 
+ * sox -> Swiss army knife of sound processing 
+ * sp -> James Clark's SGML parsing tools 
+ * speech-dispatcher -> Common interface to speech synthesizers 
+ * speech-dispatcher-audio-plugins -> Speech Dispatcher: Audio output plugins 
+ * spotify-client -> Spotify desktop client 
+ * sqlite3 -> Command line interface for SQLite 3 
+ * ssh-askpass-gnome -> interactive X program to prompt users for a passphrase for ssh-add 
+ * ssl-cert -> simple debconf wrapper for OpenSSL 
+ * steam-launcher -> Launcher for the Steam software distribution service 
+ * stockfish -> strong chess engine, to play chess against 
+ * strace -> A system call tracer 
+ * sublime-text -> Sublime Text is a sophisticated text editor for code, markup and prose 
+ * sudo -> Provide limited super user privileges to specific users 
+ * synaptic -> Graphical package manager 
+ * syslinux -> collection of boot loaders 
+ * syslinux-common -> collection of boot loaders (common files) 
+ * syslinux-legacy -> Bootloader for Linux/i386 using MS-DOS floppies 
+ * system-config-printer-common -> Printer configuration GUI 
+ * system-config-printer-gnome -> Printer configuration GUI 
+ * system-config-printer-udev -> Printer auto-configuration facility based on udev 
+ * system-tools-backends -> System Tools to manage computer configuration -- scripts 
+ * systemd-services -> systemd runtime services 
+ * systemd-shim -> shim for systemd 
+ * sysv-rc -> System-V-like runlevel change mechanism 
+ * sysvinit-utils -> System-V-like utilities 
+ * t1utils -> Collection of simple Type 1 font manipulation programs 
+ * tar -> GNU version of the tar archiving utility 
+ * tcpd -> Wietse Venema's TCP wrapper utilities 
+ * tcpdump -> command-line network traffic analyzer 
+ * tdb-tools -> Trivial Database - bundled binaries 
+ * telnet -> The telnet client 
+ * tex-common -> common infrastructure for building and installing TeX 
+ * tex-gyre -> scalable PostScript and OpenType fonts based on URW Fonts 
+ * tex4ht -> LaTeX and TeX for Hypertext (HTML) - executables 
+ * tex4ht-common -> LaTeX and TeX for Hypertext (HTML) - support files 
+ * texinfo -> Documentation system for on-line information and printed output 
+ * texlive -> TeX Live: A decent selection of the TeX Live packages 
+ * texlive-base -> TeX Live: Essential programs and files 
+ * texlive-bibtex-extra -> TeX Live: BibTeX additional styles 
+ * texlive-binaries -> Binaries for TeX Live 
+ * texlive-extra-utils -> TeX Live: TeX auxiliary programs 
+ * texlive-font-utils -> TeX Live: Graphics and font utilities 
+ * texlive-fonts-extra -> TeX Live: Additional fonts 
+ * texlive-fonts-extra-doc -> TeX Live: Documentation files for texlive-fonts-extra 
+ * texlive-fonts-recommended -> TeX Live: Recommended fonts 
+ * texlive-fonts-recommended-doc -> TeX Live: Documentation files for texlive-fonts-recommended 
+ * texlive-formats-extra -> TeX Live: Additional formats 
+ * texlive-full -> TeX Live: metapackage pulling in all components of TeX Live 
+ * texlive-games -> TeX Live: Games typesetting 
+ * texlive-generic-extra -> TeX Live: Generic additional packages 
+ * texlive-generic-recommended -> TeX Live: Generic recommended packages 
+ * texlive-humanities -> TeX Live: Humanities packages 
+ * texlive-humanities-doc -> TeX Live: Documentation files for texlive-humanities 
+ * texlive-lang-african -> TeX Live: African scripts 
+ * texlive-lang-arabic -> TeX Live: Arabic 
+ * texlive-lang-cjk -> TeX Live: Chinese/Japanese/Korean 
+ * texlive-lang-cyrillic -> TeX Live: Cyrillic 
+ * texlive-lang-czechslovak -> TeX Live: Czech/Slovak 
+ * texlive-lang-english -> TeX Live: US and UK English 
+ * texlive-lang-european -> TeX Live: Other European languages 
+ * texlive-lang-french -> TeX Live: French 
+ * texlive-lang-german -> TeX Live: German 
+ * texlive-lang-greek -> TeX Live: Greek 
+ * texlive-lang-indic -> TeX Live: Indic scripts 
+ * texlive-lang-italian -> TeX Live: Italian 
+ * texlive-lang-other -> TeX Live: Other languages 
+ * texlive-lang-polish -> TeX Live: Polish 
+ * texlive-lang-portuguese -> TeX Live: Portuguese 
+ * texlive-lang-spanish -> TeX Live: Spanish 
+ * texlive-latex-base -> TeX Live: LaTeX fundamental packages 
+ * texlive-latex-base-doc -> TeX Live: Documentation files for texlive-latex-base 
+ * texlive-latex-extra -> TeX Live: LaTeX additional packages 
+ * texlive-latex-extra-doc -> TeX Live: Documentation files for texlive-latex-extra 
+ * texlive-latex-recommended -> TeX Live: LaTeX recommended packages 
+ * texlive-latex-recommended-doc -> TeX Live: Documentation files for texlive-latex-recommended 
+ * texlive-luatex -> TeX Live: LuaTeX packages 
+ * texlive-math-extra -> TeX Live: Mathematics packages 
+ * texlive-metapost -> TeX Live: MetaPost and Metafont packages 
+ * texlive-metapost-doc -> TeX Live: Documentation files for texlive-metapost 
+ * texlive-music -> TeX Live: Music packages 
+ * texlive-omega -> TeX Live: Omega packages 
+ * texlive-pictures -> TeX Live: Graphics, pictures, diagrams 
+ * texlive-pictures-doc -> TeX Live: Documentation files for texlive-pictures 
+ * texlive-plain-extra -> TeX Live: Plain TeX packages 
+ * texlive-pstricks -> TeX Live: PSTricks 
+ * texlive-pstricks-doc -> TeX Live: Documentation files for texlive-pstricks 
+ * texlive-publishers -> TeX Live: Publisher styles, theses, etc. 
+ * texlive-publishers-doc -> TeX Live: Documentation files for texlive-publishers 
+ * texlive-science -> TeX Live: Natural and computer sciences 
+ * texlive-science-doc -> TeX Live: Documentation files for texlive-science 
+ * texlive-xetex -> TeX Live: XeTeX and packages 
+ * texmaker -> cross-platform LaTeX editor 
+ * texmaker-data -> Texmaker LaTeX editor -- arch-independent files 
+ * thin-client-config-agent -> Retrieve the list of remote desktop servers for a user. 
+ * thunderbird -> Email, RSS and newsgroup client with integrated spam filter 
+ * thunderbird-gnome-support -> Email, RSS and newsgroup client - GNOME support 
+ * thunderbird-locale-en -> English language pack for Thunderbird 
+ * thunderbird-locale-en-us -> Transitional English language pack for Thunderbird 
+ * time -> GNU time program for measuring CPU resource usage 
+ * tipa -> system for processing phonetic symbols in LaTeX 
+ * tomboy -> desktop note taking program using Wiki style links 
+ * toshset -> Access much of the Toshiba laptop hardware interface 
+ * totem-common -> Data files for the Totem media player 
+ * transmission-common -> lightweight BitTorrent client (common files) 
+ * transmission-gtk -> lightweight BitTorrent client (GTK+ interface) 
+ * tsconf -> touch screen library common files 
+ * ttf-adf-accanthis -> Accanthis font of the Arkandis Digital Foundry 
+ * ttf-adf-gillius -> Gillius font of the Arkandis Digital Foundry 
+ * ttf-dejavu -> transitional dummy package 
+ * ttf-dejavu-core -> transitional dummy package 
+ * ttf-dejavu-extra -> transitional dummy package 
+ * ttf-indic-fonts-core -> Core collection of free fonts for languages of India 
+ * ttf-punjabi-fonts -> Free TrueType fonts for the Punjabi language 
+ * ttf-ubuntu-font-family -> Ubuntu Font Family, sans-serif typeface hinted for clarity 
+ * ttf-wqy-microhei -> transitional dummy package 
+ * tuxguitar -> Multitrack guitar tablature editor and player (gp3 to gp5) 
+ * uberwriter -> UberWriter, beautiful distraction free writing 
+ * ubuntu-drivers-common -> Detect and install additional Ubuntu driver packages 
+ * ubuntu-extras-keyring -> GnuPG keys of the Ubuntu extras archive 
+ * ubuntu-keyring -> GnuPG keys of the Ubuntu archive 
+ * ubuntu-minimal -> Minimal core of Ubuntu 
+ * ubuntu-settings -> default settings for the Ubuntu desktop 
+ * ubuntu-system-adjustments -> Adjustments to the Ubuntu package base 
+ * ubuntu-system-service -> Dbus service to set various system-wide configurations 
+ * ucf -> Update Configuration File(s): preserve user changes to config files 
+ * udev -> /dev/ and hotplug management daemon 
+ * udisks -> storage media interface 
+ * udisks2 -> D-BUS service to access and manipulate storage devices 
+ * ufw -> program for managing a Netfilter firewall 
+ * unattended-upgrades -> automatic installation of security upgrades 
+ * unrar -> Unarchiver for .rar files (non-free version) 
+ * unshield -> extracts CAB files from InstallShield installers 
+ * unzip -> De-archiver for .zip files 
+ * update-inetd -> inetd configuration file updater 
+ * upower -> abstraction for power management 
+ * upstart -> event-based init daemon 
+ * ureadahead -> Read required files in advance 
+ * usb-modeswitch -> mode switching tool for controlling "flip flop" USB devices 
+ * usb-modeswitch-data -> mode switching data for usb-modeswitch 
+ * usbmuxd -> USB multiplexor daemon for iPhone and iPod Touch devices 
+ * usbutils -> Linux USB utilities 
+ * user-setup -> Set up initial user and password 
+ * util-linux -> Miscellaneous system utilities 
+ * vbetool -> run real-mode video BIOS code to alter hardware state 
+ * vim -> Vi IMproved - enhanced vi editor 
+ * vim-common -> Vi IMproved - Common files 
+ * vim-runtime -> Vi IMproved - Runtime files 
+ * vim-tiny -> Vi IMproved - enhanced vi editor - compact version 
+ * vino -> VNC server for GNOME 
+ * virtualbox-guest-utils -> x86 virtualization solution - non-X11 guest utilities 
+ * virtualbox-guest-x11 -> x86 virtualization solution - X11 guest utilities 
+ * vlc -> multimedia player and streamer 
+ * vlc-data -> Common data for VLC 
+ * vlc-nox -> multimedia player and streamer (without X support) 
+ * vlc-plugin-notify -> LibNotify plugin for VLC 
+ * vlc-plugin-pulse -> PulseAudio plugin for VLC 
+ * vorbis-tools -> several Ogg Vorbis tools 
+ * wamerican -> American English dictionary words for /usr/share/dict 
+ * watershed -> reduce superfluous executions of idempotent command 
+ * wbritish -> British English dictionary words for /usr/share/dict 
+ * webhttrack -> Copy websites to your computer, httrack with a Web interface 
+ * webhttrack-common -> webhttrack common files 
+ * wget -> retrieves files from the web 
+ * whiptail -> Displays user-friendly dialog boxes from shell scripts 
+ * wine -> Microsoft Windows Compatibility Layer (meta-package) 
+ * wine1.6 -> Microsoft Windows Compatibility Layer (Binary Emulator and Library) 
+ * wine1.6-amd64 -> Microsoft Windows Compatibility Layer (64-bit support) 
+ * wine1.6-i386:i386 -> Microsoft Windows Compatibility Layer (32-bit support) 
+ * wireless-regdb -> wireless regulatory database 
+ * wireless-tools -> Tools for manipulating Linux Wireless Extensions 
+ * wireshark -> network traffic analyzer - GTK+ version 
+ * wireshark-common -> network traffic analyzer - common files 
+ * wmctrl -> control an EWMH/NetWM compatible X Window Manager 
+ * wodim -> command line CD/DVD writing tool 
+ * wpasupplicant -> client support for WPA and WPA2 (IEEE 802.11i) 
+ * x11-apps -> X applications 
+ * x11-common -> X Window System (X.Org) infrastructure 
+ * x11-session-utils -> X session utilities 
+ * x11-utils -> X11 utilities 
+ * x11-xfs-utils -> X font server utilities 
+ * x11-xkb-utils -> X11 XKB utilities 
+ * x11-xserver-utils -> X server utilities 
+ * x11proto-core-dev -> X11 core wire protocol and auxiliary headers 
+ * x11proto-input-dev -> X11 Input extension wire protocol 
+ * x11proto-kb-dev -> X11 XKB extension wire protocol 
+ * xauth -> X authentication utility 
+ * xaw3dg:i386 -> Xaw3d widget set 
+ * xbitmaps -> Base X bitmaps 
+ * xdg-user-dirs -> tool to manage well known user directories 
+ * xdg-user-dirs-gtk -> tool to manage well known user directories (Gtk extension) 
+ * xdg-utils -> desktop integration utilities from freedesktop.org 
+ * xfonts-base -> standard fonts for X 
+ * xfonts-encodings -> Encodings for X.Org fonts 
+ * xfonts-mathml -> Type1 Symbol font for MathML 
+ * xfonts-scalable -> scalable fonts for X 
+ * xfonts-utils -> X Window System font utility programs 
+ * xfsprogs -> Utilities for managing the XFS filesystem 
+ * xindy -> index generator for structured documents like LaTeX or SGML 
+ * xindy-rules -> rule files for xindy 
+ * xinit -> X server initialisation tool 
+ * xinput -> Runtime configuration and test of XInput devices 
+ * xkb-data -> X Keyboard Extension (XKB) configuration data 
+ * xml-core -> XML infrastructure and XML catalog file support 
+ * xmms2-client-cli -> XMMS2 - cli client 
+ * xmms2-core -> XMMS2 - core package 
+ * xorg -> X.Org X Window System 
+ * xorg-docs-core -> Core documentation for the X.org X Window System 
+ * xorg-sgml-doctools -> Common tools for building X.Org SGML documentation 
+ * xserver-common -> common files used by various X servers 
+ * xserver-xephyr -> nested X server 
+ * xserver-xorg -> X.Org X server 
+ * xserver-xorg-core -> Xorg X server - core server 
+ * xserver-xorg-input-all -> X.Org X server -- input driver metapackage 
+ * xserver-xorg-input-evdev -> X.Org X server -- evdev input driver 
+ * xserver-xorg-input-mouse -> X.Org X server -- mouse input driver 
+ * xserver-xorg-input-synaptics -> Synaptics TouchPad driver for X.Org server 
+ * xserver-xorg-input-vmmouse -> X.Org X server -- VMMouse input driver to use with VMWare 
+ * xserver-xorg-input-wacom -> X.Org X server -- Wacom input driver 
+ * xserver-xorg-video-all -> X.Org X server -- output driver metapackage 
+ * xserver-xorg-video-ati -> X.Org X server -- AMD/ATI display driver wrapper 
+ * xserver-xorg-video-cirrus -> X.Org X server -- Cirrus display driver 
+ * xserver-xorg-video-fbdev -> X.Org X server -- fbdev display driver 
+ * xserver-xorg-video-glamoregl -> X.Org X server -- graphics acceleration module based on OpenGL 
+ * xserver-xorg-video-intel -> X.Org X server -- Intel i8xx, i9xx display driver 
+ * xserver-xorg-video-mach64 -> X.Org X server -- ATI Mach64 display driver 
+ * xserver-xorg-video-mga -> X.Org X server -- MGA display driver 
+ * xserver-xorg-video-modesetting -> X.Org X server -- Generic modesetting driver 
+ * xserver-xorg-video-neomagic -> X.Org X server -- Neomagic display driver 
+ * xserver-xorg-video-nouveau -> X.Org X server -- Nouveau display driver 
+ * xserver-xorg-video-openchrome -> X.Org X server -- VIA display driver 
+ * xserver-xorg-video-qxl -> X.Org X server -- QXL display driver 
+ * xserver-xorg-video-r128 -> X.Org X server -- ATI r128 display driver 
+ * xserver-xorg-video-radeon -> X.Org X server -- AMD/ATI Radeon display driver 
+ * xserver-xorg-video-s3 -> X.Org X server -- legacy S3 display driver 
+ * xserver-xorg-video-savage -> X.Org X server -- Savage display driver 
+ * xserver-xorg-video-siliconmotion -> X.Org X server -- SiliconMotion display driver 
+ * xserver-xorg-video-sis -> X.Org X server -- SiS display driver 
+ * xserver-xorg-video-sisusb -> X.Org X server -- SiS USB display driver 
+ * xserver-xorg-video-tdfx -> X.Org X server -- tdfx display driver 
+ * xserver-xorg-video-trident -> X.Org X server -- Trident display driver 
+ * xserver-xorg-video-vesa -> X.Org X server -- VESA display driver 
+ * xserver-xorg-video-vmware -> X.Org X server -- VMware display driver 
+ * xsltproc -> XSLT 1.0 command line processor 
+ * xterm -> X terminal emulator 
+ * xtrans-dev -> X transport library (development files) 
+ * xz-utils -> XZ-format compression utilities 
+ * yelp -> Help browser for GNOME 
+ * yelp-xsl -> XSL stylesheets for the yelp help browser 
+ * zenity -> Display graphical dialog boxes from shell scripts 
+ * zenity-common -> Display graphical dialog boxes from shell scripts (common files) 
+ * zip -> Archiver for .zip files 
+ * zsh -> shell with lots of features 
+ * zsh-common -> architecture independent files for Zsh 
