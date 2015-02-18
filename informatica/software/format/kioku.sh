@@ -16,8 +16,8 @@ apps=$(zenity --list --text "Select the launcher box and press OK" --width=300 -
     wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
     sudo dpkg -i skype-ubuntu-precise_4.3.0.37-1_i386.deb
     sudo apt-get -f install -y
-	sudo wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3065_amd64.deb
-	sudo gdebi sublime-text_build-3065_amd64.deb
+    sudo wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3065_amd64.deb
+    sudo gdebi sublime-text_build-3065_amd64.deb
     sudo wget https://mega.nz/linux/MEGAsync/xUbuntu_14.04/amd64/megasync-xUbuntu_14.04_amd64.deb
     sudo wget https://mega.nz/linux/MEGAsync/xUbuntu_14.04/amd64/nautilus-megasync-xUbuntu_14.04_amd64.deb
     sudo gdebi megasync-xUbuntu_14.04_amd64.deb
